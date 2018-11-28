@@ -39,15 +39,18 @@
 
               this.$nextTick(()=>{
                 var swiper = new Swiper('.swiper-container', {
-                  // loop:true,
-                  spaceBetween: 30,
-                  centeredSlides: true,
-                  // autoplay: {
-                  //   delay: 2500,
-                  //   disableOnInteraction: false,
-                  // },
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                  // init: false,
                   pagination: {
-                    el: '.swiper-pagination'
+                    el: '.swiper-pagination',
+                    clickable: true,
+                  },
+                  breakpoints: {
+                    1024: {
+                      slidesPerView: 4,
+                      spaceBetween: 40
+                    }
                   }
                 })
               })
@@ -71,18 +74,19 @@
   .nearnav ul li a{
      font-size: 1.4rem;
   }
-
   .nearswipernav{
-    padding: 1rem;
+    padding: .5rem 1rem;
   }
   .swiper-container {
     width: 100%;
     height: 100%;
   }
   .swiper-slide {
-    text-align: center;
+    text-align: left;
     font-size: 12px;
     background: #fff;
+
+    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -95,12 +99,5 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
-  .swiper-wrapper{
-    display: flex;
-  }
-  .navtitle{
-    display: block;
-    padding: 0 2rem;
   }
 </style>

@@ -12,6 +12,12 @@
     <main>
       <near-swiper></near-swiper>
       <near-nav></near-nav>
+      <!------------------nearlist------------>
+      <div class="nearnav-li">
+        <ul>
+          <near-list v-for="(p,index) in nearlist.foodlist" :tp="p"></near-list>
+        </ul>
+      </div>
     </main>
   </div>
 </template>
@@ -19,9 +25,28 @@
 <script>
   import NearSwiper from "../components/NearComponents/NearSwiper";
   import NearNav from "../components/NearComponents/NearNav";
+  import NearList from "../components/NearComponents/NearList";
+  import Apis from "../apis/Apis";
   export default {
     name: "near",
-    components: {NearNav, NearSwiper}
+    components: {NearList, NearNav, NearSwiper},
+    data(){
+      return{
+        nearlist:[]
+      }
+    },
+    methods:{
+      _initPageData() {
+        Apis.getNearlistData(data=>{
+          this.nearlist = data
+          console.log(this.nearlist)
+        })
+      }
+    },
+    created(){
+      //首页加载数据
+      this._initPageData()
+    }
   }
 </script>
 
@@ -36,7 +61,7 @@
     overflow: auto;
   }
   header{
-    height: 4.8rem;
+    height: 7.8rem;
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -65,6 +90,9 @@
     background: #e6e7e8;
     border: 0;
     color: #919294;
-    border-radius: 4px;
+    border-radius: 50px;
+  }
+  .nearnav-li ul{
+    padding: 1.5rem 1rem;
   }
 </style>

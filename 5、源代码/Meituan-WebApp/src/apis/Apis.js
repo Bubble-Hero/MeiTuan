@@ -1,6 +1,8 @@
 
 import {sliderImgUrl} from '../commons/Data'
 import {NEARNAVURL} from "../commons/Data"
+
+import {NEARLISTURL} from "../commons/Data"
 import {ORDERNAVURL} from "../commons/Data"
 
 export default {
@@ -71,8 +73,9 @@ export default {
     })
   },
 
+
   /**
-   * 获取mylists数据
+   * 获取near页面的nav数据
    * @param cb
    */
   getNearnavData(cb){
@@ -82,6 +85,14 @@ export default {
       })
     })
   },
+
+  /**
+   * 获取near页面的nearlist数据
+   * @param cb
+   */
+  getNearlistData(cb){
+    fetch(NEARLISTURL).then(res=>{
+
 
   /**
    * 获取ordernav的json数据
