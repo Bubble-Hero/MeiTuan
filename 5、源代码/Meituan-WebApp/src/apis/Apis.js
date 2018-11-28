@@ -5,6 +5,8 @@ import {NEARNAVURL} from "../commons/Data"
 import {NEARLISTURL} from "../commons/Data"
 import {ORDERNAVURL} from "../commons/Data"
 
+import {indexMenu} from "../commons/Data"
+
 export default {
   /**
    * 获取首页轮播图图片数据
