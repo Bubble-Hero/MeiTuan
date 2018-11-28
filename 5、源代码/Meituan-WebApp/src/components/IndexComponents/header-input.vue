@@ -2,7 +2,7 @@
     <div class="nav-box">
     <a href="javascript:void(0)">
       <div>西安
-      <i class="iconfont">&#xe604;</i>
+      <i class="iconfont">&#xe60f;</i>
       </div>
       <span>多云5℃</span>
     </a>
