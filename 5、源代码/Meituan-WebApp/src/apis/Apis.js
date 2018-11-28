@@ -1,6 +1,7 @@
 
 import {sliderImgUrl} from '../commons/Data'
-
+import {NEARNAVURL} from "../commons/Data"
+import {ORDERNAVURL} from "../commons/Data"
 
 export default {
   /**
@@ -62,21 +63,13 @@ export default {
    * 获取购物车页面的数据
    * @param callb
    */
-  getshopcarlist(callb){
-    fetch(shopcarlists).then(res=> {
+  getshopcarlist(callb) {
+    fetch(shopcarlists).then(res => {
       res.json().then(data => {
         callb(data)
       })
     })
-  }
-
-
-
-import {NEARNAVURL} from "../commons/Data"
-import {ORDERNAVURL} from "../commons/Data"
-
-export default  {
-
+  },
 
   /**
    * 获取mylists数据

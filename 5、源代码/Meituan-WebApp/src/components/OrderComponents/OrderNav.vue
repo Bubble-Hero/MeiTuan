@@ -1,7 +1,10 @@
 <template>
-    <div class="orderNav">
-      <div class="orderNavBox1"  :key="index" v-for="(i,index) in ordernavDatas[0].ordernav"><img :src="i.navImg" alt=""><span>{{i.spanP}}</span><div class="redCircle">1</div></div>
+  <div>
+    <div class="orderNav" v-for="(t,s) in ordernavDatas">
+      <div class="orderNavBox1"  :key="index" v-for="(i,index) in t[0].ordernav"><img :src="i.navImg" alt=""><span>{{i.spanP}}</span><div class="redCircle">1</div></div>
     </div>
+  </div>
+
 </template>
 
 <script>
@@ -30,6 +33,9 @@
       created(){
         //加载数据
         this._initOrderNavData()
+      },
+      mounted(){
+        //  console.log()
       }
 
     }
