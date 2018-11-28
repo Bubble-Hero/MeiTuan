@@ -5,6 +5,8 @@
  * @type {string}
  */
 export const NEARNAVURL="http://localhost:3000/nearnavs"
-=======
-export const AJAXURL="http://localhost:3000/server1"
- 
+/**
+ * 获取order页面nav数据 api
+ * @type {string}
+ */
+export const ORDERNAVURL="http://localhost:3000/ordernav"

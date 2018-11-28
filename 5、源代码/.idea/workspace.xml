@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ed073ca4-8f09-453a-b672-6c7a48cabc65" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/commons/Data,js" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/commons/Data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderSection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/pages/order.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/pages/order.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,6 +28,7 @@
     <session id="575395219">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -34,13 +36,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Data,js" value="1" />
-          <entry key="vue" value="1" />
+          <entry key="vue" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Vue.js" value="1" />
+          <entry key="Vue.js" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -58,19 +60,28 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/commons/Data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="52" selection-start-column="52" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderNav.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+            <state relative-caret-position="1122">
+              <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/commons/Data.js">
+        <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/pages/order.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="52" selection-start-column="52" selection-end-column="52" />
+            <state relative-caret-position="297">
+              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -140,13 +151,6 @@
               <item name="5、源代码" type="462c0819:PsiDirectoryNode" />
               <item name="Meituan-WebApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5、源代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5、源代码" type="462c0819:PsiDirectoryNode" />
-              <item name="Meituan-WebApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -161,7 +165,8 @@
               <item name="5、源代码" type="b2602c69:ProjectViewProjectNode" />
               <item name="5、源代码" type="462c0819:PsiDirectoryNode" />
               <item name="Meituan-WebApp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -174,6 +179,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\MeiTuan\5、源代码\Meituan-WebApp\src\pages" />
+      <recent name="E:\MeiTuan\5、源代码\Meituan-WebApp\src\components" />
+      <recent name="E:\MeiTuan\5、源代码\Meituan-WebApp\src\components\OrderComponents" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -198,12 +210,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543387077050</updated>
       <workItem from="1543387079667" duration="259000" />
-      <workItem from="1543389563250" duration="2211000" />
+      <workItem from="1543389563250" duration="2627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2470000" />
+    <option name="totallyTimeSpent" value="2886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1390" height="747" extended-state="6" />
@@ -235,17 +247,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderNav.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderComponents/OrderNav.vue">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/commons/Data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="52" selection-start-column="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderNav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/pages/order.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>

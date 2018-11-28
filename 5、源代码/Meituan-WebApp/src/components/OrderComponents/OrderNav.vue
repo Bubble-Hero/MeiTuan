@@ -1,38 +1,74 @@
 <template>
     <div class="orderNav">
-
+      <div class="orderNavBox1"  :key="index" v-for="(i,index) in ordernavDatas[0].ordernav"><img :src="i.navImg" alt=""><span>{{i.spanP}}</span><div class="redCircle">1</div></div>
     </div>
 </template>
 
 <script>
+    import ordernavData from "../../apis/Apis";
     export default {
-        name: "OrderNav"
+        name: "OrderNav",
+      data(){
+          return{
+            ordernavDatas:[],
+          }
+      },
+      methods: {
+        /**
+         * 加载页面数据
+         * @private
+         */
+        _initOrderNavData() {
+          ordernavData.getOrderNavData(data=>{
+            this.ordernavDatas = data
+            console.log(this.ordernavDatas)
+          })
+        }
+
+
+      },
+      created(){
+        //加载数据
+        this._initOrderNavData()
+      }
+
     }
 </script>
 
 <style scoped>
-  .learnToolsBox{
+  .orderNav{
     display: flex;
-    padding: .1rem .1rem 0;
+    padding: 5.8rem 0 .8rem;
+    /*padding: .1rem .1rem 0;*/
+    background: #f7f8fb;
 
   }
-  .learnToolsBox1{
+  .orderNavBox1{
     flex: 1;
     text-align: center;
-    margin-right: .44rem;
+    position: relative;
   }
-  .learnToolsBox1:last-child{
-    margin-right: 0;
-  }
-  .learnToolsBox1 img{
-    width:.42rem;
-    height:.36rem;
+
+  .orderNavBox1 img{
+    width:3.1rem;
+    height:2.8rem;
     margin: 0 auto;
-    margin-bottom: .08rem;
   }
-  .learnToolsBox1 span{
+  .orderNavBox1 span{
     display: block;
-    font-size: .12rem;
-    line-height: .19rem;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+  }
+  .redCircle{
+    width:1.5rem;
+    height:1.5rem;
+    background:red ;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top:0;
+    right: 1.4rem;
   }
 </style>

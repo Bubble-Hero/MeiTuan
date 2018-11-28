@@ -1,5 +1,7 @@
 <template>
-    
+    <div class="orderSection">
+
+    </div>
 </template>
 
 <script>
