@@ -14,9 +14,6 @@ export const NEARNAVURL="http://localhost:3000/nearnav"
  */
 export const NEARLISTURL="http://localhost:3000/nearlist"
 
-export const AJAXURL="http://localhost:3000/server1"
-
-export const NEARNAVURL="http://localhost:3000/nearnavs"
 /**
  * 获取order页面nav数据 api
  * @type {string}

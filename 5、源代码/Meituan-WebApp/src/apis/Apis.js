@@ -92,7 +92,11 @@ export default {
    */
   getNearlistData(cb){
     fetch(NEARLISTURL).then(res=>{
-
+      res.json().then(data=>{
+        cb(data)
+      })
+    })
+  },
 
   /**
    * 获取ordernav的json数据
