@@ -20,3 +20,9 @@ export const ORDERNAVURL="http://localhost:3000/ordernav"
  * @type {string}
  */
 export const FINDDATAURL="http://localhost:3000/findData"
+
+/**
+ *  meData
+ * @type {string}
+ */
+export const MEDATAURL="http://localhost:3000/meData"

@@ -1,11 +1,12 @@
 <template>
   <section>
+    <!---->
     <div class="section-login">
       <div class="bg"></div>
       <div class="radius">
-        <img src="../../../static/img/m_touxiamg.gif">
+        <img src="../../../static/img/m_touxiang.gif">
       </div>
-      <p>请注册登录</p>
+      <p>请点击登录</p>
       <!--<img src="../../../static/img/m_banner.gif"/>-->
       <!--<p style="line-height: 2.8rem;font-size: 1.6rem;font-weight: bolder;">请点击登录</p>-->
       <!--<span><img src="../../../static/img/m_touxiamg.gif"></span>-->
@@ -13,8 +14,10 @@
     <div class="section-con">
       <ul class="section-spz">
         <li>
-          <img src="../../../static/img/m_s.gif">
-          <p>收藏</p>
+          <router-link to="/me/meCollect">
+            <img src="../../../static/img/m_s.gif">
+            <p>收藏</p>
+          </router-link>
         </li>
         <li>
           <img src="../../../static/img/m_p.gif">
@@ -25,20 +28,22 @@
           <p>最近评价</p>
         </li>
       </ul>
+      <!----------美团钱包-------------->
       <div class="mt-wallet">
         <h2>美团钱包</h2>
         <ul class="wallet-list">
-          <li v-for="w in wallet">
+          <li :key ="i" v-for="(w,i) in prode.Mewallet">
             <img :src="w.pic">
             <p>{{w.title}}</p>
           </li>
 
         </ul>
       </div>
+      <!----------美团服务-------------->
       <div class="mt-service">
         <h2>美团服务</h2>
         <ul class="service-list">
-          <li v-for="s in service">
+          <li v-for="s in prode.Service">
             <img :src="s.pic">
             <p>{{s.title}}</p>
           </li>
@@ -49,26 +54,27 @@
 </template>
 
 <script>
+  import meData from "../../apis/Apis"
   export default {
     name: "MeSection",
-    data(){
-      return{
-        wallet:[{"pic":"../../../static/img/m_q.gif","title":"我的钱包"},
-          {"pic":"../../../static/img/m_h.gif","title":"红包/卡券"},
-          {"pic":"../../../static/img/m_y.gif","title":"余额"},
-          {"pic":"../../../static/img/m_l.gif","title":"理财"},
-          {"pic":"../../../static/img/m_c.gif","title":"手机充值"},
-        ],
-        service:[
-          {"pic":"../../../static/img/m_h.gif","title":"会员中心"},
-          {"pic":"../../../static/img/m_m.gif","title":"美团公益"},
-          {"pic":"../../../static/img/m_y.gif","title":"免流用美团"},
-          {"pic":"../../../static/img/m_f.gif","title":"发票助手"},
-          {"pic":"../../../static/img/m_w.gif","title":"我要合作"},
-          {"pic":"../../../static/img/m_g.gif","title":"关于美团"},
-        ]
-      }
-    }
+        data () {
+          return {
+            prode:[]
+          }
+        },
+        methods: {
+          __initPageData () {
+            meData.getMeData(data => {
+              this.prode = data
+              console.log(this.prode)
+            })
+          }
+        },
+        created () {
+          this.__initPageData()
+        }
+
+
   }
 </script>
 
@@ -83,6 +89,7 @@
     width: 100%;
     background:linear-gradient(to right,#17ceb8,#29c7c8,#3bb9da);
     height: 6rem;
+    top:-1rem;
 
   }
   .bg{
@@ -102,14 +109,15 @@
     height: 6rem;
     border-radius: 50%;
     margin: auto;
-    margin-top: -4rem;
+    margin-top: -3rem;
   }
   .section-login p{
     text-align: center;
-    font-size: 1.8rem;
-    font-weight: bolder;
-    margin: 0 auto ;
     white-space: nowrap;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+
   }
   .section-login span{
     position: absolute;

@@ -1,5 +1,5 @@
 {
-  "Me-wallet": [
+  "Mewallet": [
     {"pic":"../../../static/img/m_q.gif","title":"我的钱包"},
     {"pic":"../../../static/img/m_h.gif","title":"红包/卡券"},
     {"pic":"../../../static/img/m_y.gif","title":"余额"},
@@ -12,14 +12,20 @@
   {"pic":"../../../static/img/m_y.gif","title":"免流用美团"},
   {"pic":"../../../static/img/m_f.gif","title":"发票助手"},
   {"pic":"../../../static/img/m_w.gif","title":"我要合作"},
-  {"pic":"../../../static/img/m_g.gif","title":"关于美团"},
+  {"pic":"../../../static/img/m_g.gif","title":"关于美团"}
   ],
   "product":[
-    {"pic":"../../../static/img/m_h.gif","title":"会员中心"},
-    {"pic":"../../../static/img/m_m.gif","title":"美团公益"},
-    {"pic":"../../../static/img/m_y.gif","title":"免流用美团"},
-    {"pic":"../../../static/img/m_f.gif","title":"发票助手"},
-    {"pic":"../../../static/img/m_w.gif","title":"我要合作"},
-    {"pic":"../../../static/img/m_g.gif","title":"关于美团"},
+    {"pic":"../../../static/img/m_c1.gif",
+      "title":"百盛祥泡馍(清真)",
+      "range":"2.5km","pro":"起送 ￥20   配送  ￥4   美团专送",
+      "good":"../../../static/img/m_c111.gif",
+      "icon":"../../../static/img/m_c22.gif"
+    },
+    {"pic":"../../../static/img/m_c2.gif","title":"大虎老火锅","range":"3.4km","pro":"重庆火锅"},
+    {"pic":"../../../static/img/m_c4.gif","title":"老米家泡馍(都市印...)","range":"3.4km","pro":"重庆火锅"},
+    {"pic":"../../../static/img/m_y.gif","title":"全鑫租车","range":"3.9km","pro":"吉祥村   租车"},
+    {"pic":"../../../static/img/m_c5.gif","title":"陕南锅巴饭"},
+    {"pic":"../../../static/img/m_c6.gif","title":"蛐蛐火锅（正兴路店）"}
+
   ]
 }
