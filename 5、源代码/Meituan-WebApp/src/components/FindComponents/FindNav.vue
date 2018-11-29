@@ -1,6 +1,6 @@
 <template>
   <div class="findNav">
-    <div class="rows swiper-container">
+    <div class="rows swiper-container s1">
       <div class="swiper-wrapper s1-content buf1">
         <span class="footercolor"></span>
         <div class="swiper-slide first">精选</div>
@@ -17,10 +17,19 @@
 </template>
 
 <script>
-    import Swiper from '../../../static/swiper/dist/js/swiper.min'
+  import Swiper from "swiper"
     export default {
-        name: "FindNav"
+        name: "FindNav",
+      methods:{
+          _navSwiper(){
+            var swiper = new Swiper('.s1');
+          }
+      },
+      mounted(){
+        new Swiper('.swiper-container');
+      }
     }
+
 </script>
 
 <style scoped>
@@ -29,7 +38,7 @@
   }
   .rows {
     width: 100%;
-    overflow-x: scroll;
+    /*overflow-x: scroll;*/
     font-size: 1.4rem;
     letter-spacing: .2rem;
     line-height: 4rem;
@@ -38,7 +47,7 @@
     border: 1px solid #f6f6f6;
   }
   .swiper-slide{
-    width: auto;
+    width: auto!important;
     padding-right: 2.4rem;
     color: #8d8d8d;
   }

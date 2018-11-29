@@ -1,5 +1,6 @@
 <template>
   <div>
+    <router-link to="/find/findChild">
     <div class="findCont">
       <div class="up">
         <span class="name">{{m.name}}</span>
@@ -19,6 +20,7 @@
         <span class="see">{{m.see}}人看过</span>
       </div>
     </div>
+    </router-link>
   </div>
 </template>
 
@@ -36,7 +38,7 @@
     justify-content: space-between;
   }
   .name{
-    color: #5eb6ad;
+    color: #5aa1aa;
     font-size: 1.6rem;
   }
   .attention{

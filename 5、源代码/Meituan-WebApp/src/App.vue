@@ -1,7 +1,7 @@
 <template>
   <div style="display: flex;flex-direction: column;min-height: 100vh;">
-    <router-view class="swiper-slide" style="max-height: 92vh;overflow:auto;flex: 1;"/>
-    <BottomNav></BottomNav>
+    <router-view class="swiper-slide" style="overflow:auto;flex: 1;"/>
+    <BottomNav v-if="$route.meta.navShow"></BottomNav>
   </div>
 </template>
 <script>

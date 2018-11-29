@@ -10,7 +10,8 @@ import find from '@/pages/find'
 import order from '@/pages/order'
 import me from '@/pages/me'
 
-
+import findFather from "@/components/FindComponents/FindFather"
+import findChild from "@/components/FindComponents/FindChild/FindChild"
 
 Vue.use(Router)
 
@@ -33,7 +34,12 @@ export default new Router({
     {
       path: '/find',
       name: 'find',
-      component: find
+      component: find,
+      children:[
+        {path: '', redirect: "findFather"},
+        {path: 'findFather', name: "FindFather",component:findFather,meta:{navShow:true}},
+        {path: 'findChild', name: "FindChild",component:findChild}
+      ]
     },
     {
       path: '/order',
