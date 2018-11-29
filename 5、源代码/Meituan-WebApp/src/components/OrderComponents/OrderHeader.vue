@@ -5,8 +5,10 @@
 </template>
 
 <script>
+
     export default {
         name: "OrderHeader"
+
     }
 </script>
 
@@ -21,5 +23,6 @@
     font-weight: 600;
     top: 0;
     left: 0;
+    z-index: 2;
   }
 </style>

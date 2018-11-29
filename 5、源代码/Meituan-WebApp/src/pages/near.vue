@@ -11,13 +11,9 @@
     <!----------------main---------------->
     <main>
       <near-swiper></near-swiper>
-      <near-nav></near-nav>
+      <near-nav :nav1="nearlist[0].nav"></near-nav>
       <!------------------nearlist------------>
-      <div class="nearnav-li">
-        <ul>
-          <near-list v-for="(p,index) in nearlist.foodlist" :tp="p"></near-list>
-        </ul>
-      </div>
+      <near-list :box1="nearlist[0].box1"></near-list>
     </main>
   </div>
 </template>
@@ -51,6 +47,7 @@
 </script>
 
 <style scoped>
+
   .all{
     display: flex;
     flex-direction: column;
@@ -92,7 +89,5 @@
     color: #919294;
     border-radius: 50px;
   }
-  .nearnav-li ul{
-    padding: 1.5rem 1rem;
-  }
+
 </style>

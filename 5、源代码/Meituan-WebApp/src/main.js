@@ -6,7 +6,7 @@ import router from './router'
 import store from './store/store'
 import betterScroll from 'better-scroll'
 import VueScroller  from 'vue-scroller'
-import $ from 'jquery'
+import 'jquery'
 import Swiper from 'swiper'
 
 require('./assets/css/base.scss')

@@ -1,0 +1,25 @@
+{
+  "Me-wallet": [
+    {"pic":"../../../static/img/m_q.gif","title":"我的钱包"},
+    {"pic":"../../../static/img/m_h.gif","title":"红包/卡券"},
+    {"pic":"../../../static/img/m_y.gif","title":"余额"},
+    {"pic":"../../../static/img/m_l.gif","title":"理财"},
+    {"pic":"../../../static/img/m_c.gif","title":"手机充值"}
+  ],
+  "Service":[
+  {"pic":"../../../static/img/m_h.gif","title":"会员中心"},
+  {"pic":"../../../static/img/m_m.gif","title":"美团公益"},
+  {"pic":"../../../static/img/m_y.gif","title":"免流用美团"},
+  {"pic":"../../../static/img/m_f.gif","title":"发票助手"},
+  {"pic":"../../../static/img/m_w.gif","title":"我要合作"},
+  {"pic":"../../../static/img/m_g.gif","title":"关于美团"},
+  ],
+  "product":[
+    {"pic":"../../../static/img/m_h.gif","title":"会员中心"},
+    {"pic":"../../../static/img/m_m.gif","title":"美团公益"},
+    {"pic":"../../../static/img/m_y.gif","title":"免流用美团"},
+    {"pic":"../../../static/img/m_f.gif","title":"发票助手"},
+    {"pic":"../../../static/img/m_w.gif","title":"我要合作"},
+    {"pic":"../../../static/img/m_g.gif","title":"关于美团"},
+  ]
+}

@@ -1,65 +1,94 @@
 <template>
-        <li>
-          <div class="left-picture">
-            <img :src="tp.pic1" alt="">
+  <div class="nearnav-li">
+    <ul class="nav-ul" v-for="(b,index) in box1">
+      <li v-for="(bb,index) in b" ><a href="">{{bb.title}}</a></li>
+    </ul>
+    <ul class="life-ul">
+      <li v-for="(ll,index) in box1">
+        <div class="left-picture">
+          <img :src="ll.pic1" alt="">
+        </div>
+        <div class="right-other">
+          <div class="other-top">
+            <p>{{ll.p1}}</p>
+            <span>1.0km</span>
           </div>
-          <div class="right-other">
-            <div class="other-top">
-              <p>{{tp.p1}}</p>
-              <span>{{tp.span1}}</span>
-            </div>
-            <div class="other-cen">
-              <img :src="tp.pic2" alt="">
-              <span>{{tp.span2}}</span>
-              <span>{{tp.span3}}</span>
-            </div>
-            <div class="sale">{{tp.sale}}</div>
-            <div class="last">
-              <span><img :src="tp.pic3" alt=""></span>
-              <p>{{tp.p2}}</p>
-            </div>
+          <div class="other-cen">
+            <img src="../../../static/img/n-star.png" alt="">
+            <span>4.0分</span>
+            <span>人均￥19</span>
           </div>
-        </li>
+          <div class="sale">多优惠+</div>
+          <div class="last">
+            <span><img src="../../../static/img/n-tuan.png" alt=""></span>
+            <p>16.8元 招牌单人套餐，20.8元，特色鸡扒三选一，23.8元 人气单人套餐</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
 </template>
 
 <script>
-    export default {
-        name: "NearList",
-        props:["tp"]
-    }
+  export default {
+    name: "NearList",
+    props:["box1"]
+  }
 </script>
 
 <style scoped>
-  li{
+  ::-webkit-scrollbar{
+    display:none;
+  }
+  .nearnav-li .life-ul{
+    padding: 1.5rem 1rem;
+  }
+  .nearnav-li .nav-ul{
+    display: -webkit-box;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /*padding-left: 2.6rem;*/
+    line-height: 2rem;
+  }
+  .nearnav-li .nav-ul li{
+    /*width: 20%;*/
+    padding:0 2.6rem;
+  }
+
+
+
+  .nearnav-li .life-ul li{
     display: flex;
     border-bottom: 1px solid #ccc;
     padding: 1.2rem 0;
   }
-  li .left-picture{
+  .nearnav-li .life-ul li .left-picture{
     width: 7.8rem;
     height: 5.8rem;
     border: 1px solid #cec3c1;
   }
-  li .left-picture img{
+  .nearnav-li .life-ul li .left-picture img{
     width: 7.8rem;
     height: 5.8rem;
   }
-  li .right-other{
+  .nearnav-li .life-ul li .right-other{
     flex: 1;
     padding-left: .9rem;
     /*background: #f00;*/
   }
-  li .right-other .other-top{
+  .nearnav-li .life-ul li .right-other .other-top{
     position: relative;
     display: flex;
   }
-  li .right-other .other-top p{
+  .nearnav-li .life-ul li .right-other .other-top p{
     width: 12rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  li .right-other .other-top span{
+  .nearnav-li .life-ul li .right-other .other-top span{
     display: inline-block;
     position: absolute;
     width: 4.1rem;
@@ -70,18 +99,18 @@
     border-bottom-left-radius: .9rem;
     color: #727274;
   }
-  li .right-other .other-cen{
+  .nearnav-li .life-ul li .right-other .other-cen{
     display: flex;
     align-items: center;
   }
-  li .right-other .other-cen img{
+  .nearnav-li .life-ul li .right-other .other-cen img{
     width: 5rem;
     height: .9rem;
   }
-  li .right-other .other-cen span{
+  .nearnav-li .life-ul li .right-other .other-cen span{
     padding-left: .7rem;
   }
-  li .right-other .sale{
+  .nearnav-li .life-ul li .right-other .sale{
     width: 4.6rem;
     text-align: center;
     line-height: 1.3rem;
@@ -89,20 +118,20 @@
     color: #f75b0e;
     margin-top: .4rem;
   }
-  li .right-other .last{
+  .nearnav-li .life-ul li .right-other .last{
     display: flex;
     padding-top: .4rem;
   }
-  li .right-other .last span{
+  .nearnav-li .life-ul li .right-other .last span{
     width: 1.5rem;
     height: 1.5rem;
     margin-top: .4rem;
   }
-  li .right-other .last span img{
+  .nearnav-li .life-ul li .right-other .last span img{
     width: 1.5rem;
     height: 1.5rem;
   }
-  li .right-other .last p{
+  .nearnav-li .life-ul li .right-other .last p{
     padding-left: .3rem;
   }
 </style>

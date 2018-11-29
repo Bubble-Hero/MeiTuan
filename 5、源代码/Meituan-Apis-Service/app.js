@@ -9,8 +9,6 @@ var usersRouter = require('./routes/users');
 
 var indexSliderRouter = require('./routes/indexSliderImg');
 
-var nearnavRouter = require('./routes/nearnav');
-
 var nearlistRouter = require('./routes/nearlist');
 
 var ordernavRouter = require('./routes/ordernav');
@@ -36,8 +34,6 @@ app.use('/users', usersRouter);
 
 app.use('/indexSlider', indexSliderRouter);
 
-app.use('/nearnav', nearnavRouter);
-
 app.use('/nearlist', nearlistRouter);
 
 app.use('/ordernav', ordernavRouter);
@@ -45,6 +41,7 @@ app.use('/ordernav', ordernavRouter);
 app.use('/indexMenu', indexMenuRouter);
 
 app.use('/findData',findDataRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

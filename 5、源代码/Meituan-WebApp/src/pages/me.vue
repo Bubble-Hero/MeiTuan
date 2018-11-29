@@ -17,14 +17,9 @@
 </script>
 
 <style scoped>
-  /*html,body{*/
-    /*height: 100%;*/
-  /*}*/
-  /*.all{*/
-    /*display: flex;*/
-    /*height: 100%;*/
-    /*flex-direction: column;*/
-    /*justify-content: space-between;*/
-  /*}*/
-
+  .all{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 </style>
