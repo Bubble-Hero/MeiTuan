@@ -38,7 +38,7 @@
     height: 16rem;
     padding: 1.5rem 1rem 1rem;
     background: #fff;
-
+    margin-top: 5rem;
   }
   .sliderBox img{
     width: 100%;
