@@ -17,7 +17,11 @@
 </template>
 
 <script>
+
   import Swiper from "swiper"
+
+    import Swiper from 'swiper'
+
     export default {
         name: "FindNav",
       methods:{
