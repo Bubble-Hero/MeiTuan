@@ -5,8 +5,8 @@
         <order-nearby :key="w" :ind="w" :nearby="q" v-for="(q,w) in ordernavDatas"></order-nearby>
         <h2>查看全部<i class="orderSecIcon iconfont">&#xe63b;</i></h2>
     </div>
-    <div class="orderSection">
-      <h1>我的收藏</h1>
+    <div class="orderSection orderSection2">
+      <h1 class="orderMyCollect"><p>我的收藏</p></h1>
       <order-collect  :key="ind1" :ind2="ind1" :a2="a1" v-for="(a1,ind1) in ordernavDatas"></order-collect>
       <h2>查看全部<i class="orderSecIcon iconfont">&#xe63b;</i></h2>
     </div>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-    import $ from 'jquery'
+
     import orderSectionData from "../../apis/Apis"
     import OrderNearby from "./OrderNearby";
     import OrderCollect from "./OrderCollect";
@@ -29,18 +29,7 @@
         name: "OrderSection",
       components: {OrderVisits, OrderCollect, OrderNearby},
       mounted(){
-        $(".orderSectionBox").scroll(function() {
-          let offSetTop = $(".orderSectionBox").scrollTop();
-          if (offSetTop > 0) {
-            $(".orderHeader").css({
-              "border-bottom": ".2rem solid blue"
-            })
-          }else{
-            $(".orderHeader").css({
-              "border-bottom": "0"
-            })
-          }
-        })
+
       },
       data(){
           return{
@@ -83,6 +72,8 @@
   font-size: 1.5rem;
   line-height:4.4rem ;
   color: black;
+  background: white;
+  width: 100%;
 }
 .orderSection h2{
   font-size: 1.3rem;
