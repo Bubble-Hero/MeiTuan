@@ -40,11 +40,11 @@
   ::-webkit-scrollbar{
     display:none;
   }
-  /*.selected{*/
-    /*color: #f94024;*/
-    /*border-radius: 50px;*/
-    /*background: #ffe9e6;*/
-  /*}*/
+  .selected{
+    color: #f94024;
+    border-radius: 50px;
+    background: #ffe9e6;
+  }
   .nearnav-li{
     display: none;
   }
