@@ -2,33 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0be41616-7624-4e96-a27f-872c60e258fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Meituan-Apis-Service/data/index.menuData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Meituan-Apis-Service/routes/indexMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/indexMenu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/menu-nav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-Apis-Service/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-Apis-Service/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-Apis-Service/data/indexSlider.img.json" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-Apis-Service/data/indexSlider.img.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/apis/Apis.js" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/apis/Apis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/headerInput.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/headerInput.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/index.slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/index.slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/commons/Data.js" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/commons/Data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/components/BottomNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/components/BottomNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/header-input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/header-input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/slider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/slider.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/static/font/demo_fontclass.html" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/static/font/demo_fontclass.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/static/font/demo_symbol.html" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/static/font/demo_symbol.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/static/font/demo_unicode.html" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/static/font/demo_unicode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/static/font/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/static/img/i-h-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/MeiTuan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/5、源代码.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderCollect.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderCollect.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderNearby.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderNearby.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderSection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderVisits.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/components/OrderComponents/OrderVisits.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meituan-WebApp/src/pages/order.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Meituan-WebApp/src/pages/order.vue" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,25 +64,32 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="575395219">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/menu-nav.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-              <folding>
-                <element signature="e#841#857#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meituan-Apis-Service/data/index.menuData.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="165">
               <caret line="5" column="92" selection-start-line="5" selection-start-column="92" selection-end-line="5" selection-end-column="92" />
             </state>
           </provider>
@@ -101,13 +98,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/indexMenu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
+            <state relative-caret-position="66">
               <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/slider.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
@@ -120,10 +117,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/BottomNav.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="363">
               <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
             </state>
           </provider>
@@ -132,7 +134,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/headerInput.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="825">
               <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
             </state>
           </provider>
@@ -141,7 +143,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/index.slider.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
+            <state relative-caret-position="99">
               <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
             </state>
           </provider>
@@ -150,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meituan-Apis-Service/routes/indexMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="462">
               <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
@@ -159,7 +161,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/pages/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
+            <state relative-caret-position="1023">
               <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -176,7 +178,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/header-input.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="165">
               <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
@@ -225,10 +227,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="2808" />
-    <option name="height" value="1780" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="2809" />
+    <option name="height" value="1782" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -315,6 +317,10 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MeiTuan\5、源代码\Meituan-Apis-Service\data" />
@@ -348,7 +354,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ed073ca4-8f09-453a-b672-6c7a48cabc65" name="Default Changelist" comment="" />
+      <changelist id="0be41616-7624-4e96-a27f-872c60e258fe" name="Default Changelist" comment="" />
       <created>1543387077050</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -356,17 +362,17 @@
       <workItem from="1543387079667" duration="259000" />
       <workItem from="1543389563250" duration="912000" />
       <workItem from="1543406184591" duration="22610000" />
+      <workItem from="1543455497071" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23781000" />
+    <option name="totallyTimeSpent" value="23795000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="1013" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1390" height="747" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24915369" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24870849" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -384,6 +390,9 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -403,18 +412,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/index.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/index.scss" />
+    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/index.css" />
     <entry file="file://$PROJECT_DIR$/Meituan-Apis-Service/data/ordernav.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -436,10 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#template#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -447,9 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="e#665#693#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -481,14 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#1#45#0" expanded="true" />
-            <element signature="e#262#371#0" />
-            <element signature="e#618#726#0" />
-            <element signature="e#803#914#0" />
-            <element signature="e#988#1099#0" />
-            <element signature="e#1171#1282#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,26 +500,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/menu-nav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Meituan-Apis-Service/data/index.menuData.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="165">
           <caret line="5" column="92" selection-start-line="5" selection-start-column="92" selection-end-line="5" selection-end-column="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/menu-nav.vue">
+    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/indexMenu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#841#857#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="66">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/BottomNav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/headerInput.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/index.slider.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meituan-Apis-Service/routes/indexMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/pages/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
+        <state relative-caret-position="1023">
           <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -547,43 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/IndexComponents/header-input.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="165">
           <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/headerInput.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/components/BottomNav.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/index.slider.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meituan-Apis-Service/routes/indexMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meituan-WebApp/src/assets/css/indexScss/indexMenu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -597,6 +581,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
