@@ -19,3 +19,9 @@ export const NEARLISTURL="http://localhost:3000/nearlist"
  * @type {string}
  */
 export const ORDERNAVURL="http://localhost:3000/ordernav"
+
+/**
+ *  findData
+ * @type {string}
+ */
+export const FINDDATAURL="http://localhost:3000/findData"
