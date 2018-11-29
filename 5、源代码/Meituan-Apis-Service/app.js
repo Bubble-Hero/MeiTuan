@@ -15,6 +15,7 @@ var ordernavRouter = require('./routes/ordernav');
 
 var indexMenuRouter = require('./routes/indexMenu');
 
+var findDataRouter = require('./routes/findData');
 
 var app = express();
 
@@ -39,7 +40,7 @@ app.use('/ordernav', ordernavRouter);
 
 app.use('/indexMenu', indexMenuRouter);
 
-
+app.use('/findData',findDataRouter);
 
 
 // catch 404 and forward to error handler

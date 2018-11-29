@@ -6,6 +6,7 @@ import {ORDERNAVURL} from "../commons/Data"
 
 import {indexMenu} from "../commons/Data"
 
+import {FINDDATAURL} from "../commons/Data"
 
 export default {
   /**
@@ -97,7 +98,20 @@ export default {
         cb(data)
       })
     })
+  },
+  /**
+   * 获取find数据
+   * @param cb
+   */
+  getFindData(cb){
+
+    fetch(FINDDATAURL).then(res=>{
+      res.json().then(data=>{
+        cb(data)
+      })
+    })
   }
+
 }
 
 
