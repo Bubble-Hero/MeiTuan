@@ -25,17 +25,28 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: index
+      component: index,
+      children:[
+        {path: '', redirect: "",meta:{navShow:true}}
+        ]
     },
     {
       path: '/index',
       name: 'index',
       component: index,
+      children:[
+        {path: '', redirect: "",meta:{navShow:true}},
+       // {path: 'meishi', name: "meishi",component:meishi,meta:{navShow:false}},
+      ]
     },
     {
       path: '/near',
       name: 'near',
-      component: near //组建名与上面的import 后面的名字相同
+      component: near, //组建名与上面的import 后面的名字相同
+      children:[
+        {path: '', redirect: "",meta:{navShow:true}},
+        // {path: 'meishi', name: "meishi",component:meishi,meta:{navShow:false}},
+      ]
     },
     {
       path: '/find',
@@ -73,8 +84,8 @@ export default new Router({
       children: [
         {path:'',redirect:'meAll'},
         //xianyi
-        {path:'meAll',name:'MeAll',component:meAll},
-        {path:'meCollect',name:'MeCollect',component:meCollect}
+        {path:'meAll',name:'MeAll',component:meAll,meta:{navShow:true}},
+        {path:'meCollect',name:'MeCollect',component:meCollect,meta:{navShow:false}}
       ]
     },
 

@@ -2,10 +2,9 @@
   <div class="findList">
     <div class="swiper-container s2">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" :key="index" v-for="(i,index) in findDatas">
-           <find-cont :key="inde" :m="j"  :ind="inde"  v-for="(j,inde) in i.slide"></find-cont>
+        <div class="swiper-slide" v-for="(i,index) in findDatas[0]">
+            <find-cont :m="j" :ind="inde"  v-for="(j,inde) in i.slide"></find-cont>
         </div>
-
       </div>
     </div>
   </div>
@@ -14,8 +13,8 @@
 
 <script>
    import findData from "../../apis/Apis"
-    import FindCont from "./FindCont";
    import Swiper from "swiper";
+   import FindCont from "./FindCont";
     export default {
         name: "FindList",
       components: {FindCont},
@@ -52,7 +51,7 @@
       mounted(){
         //首页加载数据
         this._initFindData()
-       this.initSwiper()
+        this.initSwiper()
       }
     }
 </script>
