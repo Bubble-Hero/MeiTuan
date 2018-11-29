@@ -10,36 +10,33 @@
       ]
     },
     {
-      "orderSection":[
+      "orderSection1": [
         {
-          "section1":"最近订单",
-          "sectionDown":"查看全部",
-          "section1List":[
-            {"pic1":"../.././static/o-now-1.jpg",
-              "pic2":"../.././static/o-now-2.jpg",
-              "header1":"美团美食",
-              "header2":"鹿鸣驿火锅代金券",
-              "headerRight":"已评价",
-              "num":"1",
-              "money":"¥85.5"
-            },
-            {"pic1":"../.././static/o-now-4.jpg",
-              "pic2":"../.././static/o-now-3.jpg",
-              "header1":"美团外卖",
-              "header2":"良辰吉时(T11店)",
-              "headerRight":"已评价",
-              "num":"2",
-              "money":"¥19.5"
-            }
-          ]
+          "pic1": "../../../static/img/o-now-1.jpg",
+          "pic2": "../../../static/img/o-now-2.jpg",
+          "header1": "美团美食",
+          "header2": "鹿鸣驿火锅代金券",
+          "headerRight": "已评价",
+          "num": "1",
+          "money": "¥85.5"
         },
         {
-          "section2":"我的收藏",
-          "sectionDown":"查看全部",
-          "section1List":[
+          "pic1": "../../../static/img/o-now-4.jpg",
+          "pic2": "../../../static/img/o-now-3.jpg",
+          "header1": "美团外卖",
+          "header2": "良辰吉时(T11店)",
+          "headerRight": "已评价",
+          "num": "2",
+          "money": "¥19.5"
+        }
+      ]
+    },
+    {
+
+          "orderSection2":[
             {
-              "pic3":"../.././static/o-collect-1.jpg",
-              "pic4":"../.././static/o-collect-4.jpg",
+              "pic3":"../../../static/img/o-collect-1.jpg",
+              "pic4":"../../../static/img/o-collect-4.jpg",
               "hh1":"你好 别走",
               "hh2":"科技路西口",
               "hh3":"凉皮",
@@ -47,8 +44,8 @@
               "money":"¥8.8"
             },
             {
-              "pic3":"../.././static/o-collect-2.jpg",
-              "pic4":"../.././static/o-collect-4.jpg",
+              "pic3":"../../../static/img/o-collect-2.jpg",
+              "pic4":"",
               "hh1":"鹿鸣驿火锅",
               "hh2":"丈八北路",
               "hh3":"火锅",
@@ -56,8 +53,8 @@
               "money":"¥88.8"
             },
             {
-              "pic3":"../.././static/o-collect-3.jpg",
-              "pic4":"../.././static/o-collect-5.jpg",
+              "pic3":"../../../static/img/o-collect-3.jpg",
+              "pic4":"../../../static/img/o-collect-5.jpg",
               "hh1":"欢乐梦工场影城",
               "hh2":"科技路西口",
               "hh3":"电影院",
@@ -65,13 +62,11 @@
               "money":"¥28.8"
             }
           ]
-        },
-        {
-          "section3":"最近浏览",
-          "sectionDown":"查看全部",
-          "section1List":[
+    },
+    {
+          "orderSection3":[
             {
-              "pic5":"../.././static/o-visits-1.jpg",
+              "pic5":"../../../static/img/o-visits-1.jpg",
               "hh1":"法朋.台北",
               "hh2":"豆乳盒子709ML1份，免预约",
               "hh3":"¥68.8",
@@ -79,24 +74,22 @@
               "bmoney":"¥28.8"
             },
             {
-              "pic5":"../.././static/o-visits-1.jpg",
-              "hh1":"法朋.台北",
-              "hh2":"豆乳盒子709ML1份，免预约",
+              "pic5":"../../../static/img/o-visits-2.jpg",
+              "hh1":"鹿鸣驿火锅",
+              "hh2":"100元代金券1张",
               "hh3":"¥68.8",
-              "hhRight":"8.6",
-              "bmoney":"¥28.8"
+              "hhRight":"3.4",
+              "bmoney":"¥85.0"
             },
             {
-              "pic5":"../.././static/o-visits-1.jpg",
+              "pic5":"../../../static/img/o-visits-3.jpg",
               "hh1":"法朋.台北",
-              "hh2":"豆乳盒子709ML1份，免预约",
+              "hh2":"100元代金券1张",
               "hh3":"¥68.8",
-              "hhRight":"8.6",
-              "bmoney":"¥28.8"
+              "hhRight":"5.2",
+              "bmoney":"¥50.0"
             }
           ]
         }
-      ]
-    }
   ]
 ]
