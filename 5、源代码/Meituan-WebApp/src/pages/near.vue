@@ -1,5 +1,5 @@
 <template>
-  <div class="all" style="background: #fff;">
+  <div class="all" style="background: #fff;max-height: 92vh;">
     <!-----------------header------------->
     <header>
       <p>蜀留香<i class="iconfont">&#xe604;</i></p>
@@ -41,6 +41,16 @@
           console.log(this.nearlist)
         })
       },
+      scrolltop(){
+        $("main").scroll(function () {
+          let a = $("main").scrollTop();
+          if (a>190){
+            $(".nearnav").css({
+              "position":"fixed",
+            })
+          }
+        })
+      }
     },
     created(){
       //首页加载数据
@@ -56,7 +66,8 @@
           var i = $(this).index();
           $('.nearnav-li').eq(i).show().siblings('.nearnav-li').hide();
         })
-      })
+      }),
+      this.scrolltop()
     }
   }
 </script>

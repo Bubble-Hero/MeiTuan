@@ -1,12 +1,10 @@
 <template>
-  <div>
     <!-----------------nearnav------------->
-    <div class="nearnav">
+    <div class="nearnav fixed">
       <ul>
         <li class="cli" v-for="(p,index) in nav1"><span></span>{{p.title}}</li>
       </ul>
     </div>
-  </div>
 </template>
 
 <script>
