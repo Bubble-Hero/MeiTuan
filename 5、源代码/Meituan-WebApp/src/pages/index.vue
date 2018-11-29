@@ -13,15 +13,15 @@
           <header-input></header-input>
           <slider></slider>
         </header>
-        <!--<main>-->
-          <!--<menu-nav></menu-nav>-->
+        <main>
+          <menu-nav></menu-nav>
+          <nav-img></nav-img>
           <!--<shop-active></shop-active>-->
           <!--<shop-school></shop-school>-->
-        <!--</main>-->
+        </main>
         <div class="upload" v-if="pullup" style="text-align: center;font-size: 1rem;color:#aaa">{{pullupText}}</div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -29,10 +29,11 @@
     import $ from 'jquery'
     import HeaderInput from "../components/IndexComponents/header-input";
     import slider from "../components/IndexComponents/slider";
-    // import MenuNav from "../components/indexComponents/menu-nav";
+    import MenuNav from "../components/IndexComponents/menu-nav";
     // import shopActive from '../components/indexComponents/shopActive'
     // import ShopSchool from "../components/indexComponents/shopSchool";
     import BScroll from 'better-scroll'
+    import NavImg from "../components/IndexComponents/navImg";
 
 
     export default {
@@ -92,9 +93,10 @@
         }
       },
         components: {
+          NavImg,
           HeaderInput,
           slider,
-          // MenuNav,
+          MenuNav,
           // shopActive,
           // ShopSchool
         },

@@ -1,0 +1,31 @@
+[
+      {
+        "row":[
+          {"ico":"&#xe641;","color":"#f09955","title":"美食","bg":"../../../static/img/i-m-1.png"},
+          {"ico":"&#xe667;","color":"red","title":"电影/演出"},
+          {"ico":"&#xe508;","color":"#89583a","title":"酒店住宿","bg":"../../../static/img/i-m-3.png"},
+          {"ico":"&#xe618;","color":"#5ec5b3","title":"休闲娱乐"},
+          {"ico":"&#xe809;","color":"#f5c04a","title":"外卖"}
+        ]
+      },
+      {
+        "row":
+        [
+          {"ico":"&#xe553;","color":"#f5c452","title":"闪购超市"},
+          {"ico":"&#xe63a;","color":"#ed7184","title":"结婚/摄影"},
+          {"ico":"&#xe6e8;","color":"#70aef7","title":"周边游"},
+          {"ico":"&#xe509;","color":"#ec6577","title":"丽人/美发","bg":"../../../static/img/i-m-2.png"},
+          {"ico":"&#xe533;","color":"#ed7e8f","title":"亲子/乐园"}
+        ]
+      },
+      {
+        "row":
+        [
+          {"ico":"&#xe616;","color":"#68aaf7","title":"火车票/机票"},
+          {"ico":"&#xe651;","color":"#f5c452","title":"民宿/公寓"},
+          {"ico":"&#xe50a;","color":"#f4bd45","title":"跑腿代购"},
+          {"ico":"&#xe605;","color":"#ef8d46","title":"火锅"},
+          {"ico":"&#xe704;","color":"#dc5042","title":"全部分类"}
+        ]
+      }
+]

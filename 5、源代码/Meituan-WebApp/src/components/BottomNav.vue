@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <router-link class="nav" to="/index"><i class="navIcon iconfont">&#xe607;</i>首页</router-link>
+    <router-link class="nav" to="/index"><i class="navIcon iconfont">&#xe604;</i>首页</router-link>
     <router-link class="nav" to='/near'><i class="navIcon iconfont">&#xe645;</i>附近</router-link>
     <router-link class="nav" to='/find'><i class="navIcon iconfont">&#xe6cd;</i>发现</router-link>
     <router-link class="nav" to='/order'><i class="navIcon iconfont">&#xe6cf;</i>订单</router-link>
@@ -24,7 +24,7 @@
   .navigation{
     display:flex;/*设置五个导航条的内容由列排列变为行排列*/
     height: 8vh;
-    font-size: 1.1rem;
+    font-size: 1rem;
     background-color: #fff;
     position: relative;
     z-index: 1000;
@@ -52,6 +52,6 @@
   .router-link-active{
     margin-top: .8em;
     color:#28c0ac;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 </style>
