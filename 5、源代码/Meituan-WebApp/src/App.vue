@@ -2,6 +2,8 @@
   <div style="display: flex;flex-direction: column;min-height: 100vh;">
     <router-view class="swiper-slide" style="overflow:auto;flex: 1;"/>
 
+
+
     <BottomNav v-show="$route.meta.navShow"></BottomNav>
     <!--v-show="$route.meta.navShow"控制底部显示隐藏-->
 

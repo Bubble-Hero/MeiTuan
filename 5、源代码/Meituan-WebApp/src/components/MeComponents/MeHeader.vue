@@ -1,6 +1,9 @@
 <template>
+  <!-------------我的头部--------------->
   <header>
-    <div class="header-set"><i class="iconfont icon-shezhi"></i></div>
+    <div class="header-set">
+      <i class="iconfont icon-shezhi"></i>
+    </div>
     <div class="header-km">
       <i class="iconfont icon-kefu"></i>
       <i class="iconfont icon-p-emial"></i>

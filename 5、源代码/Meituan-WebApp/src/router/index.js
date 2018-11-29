@@ -9,6 +9,8 @@ import near from '@/pages/near'
 import find from '@/pages/find'
 import order from '@/pages/order'
 import me from '@/pages/me'
+import meAll from '@/components/MeComponents/MeAll'
+import meCollect from '@/components/MeComponents/MeCollectComponents/MeCollect'
 
 //添加order两个子页面
 import orderChildren from '@/components/OrderComponents/orderSecondPages/OrderSecondPage'
@@ -67,7 +69,14 @@ export default new Router({
     {
       path: '/me',
       name: 'me',
-      component: me
+      component: me,
+      children: [
+        {path:'',redirect:'meAll'},
+        //xianyi
+        {path:'meAll',name:'MeAll',component:meAll},
+        {path:'meCollect',name:'MeCollect',component:meCollect}
+      ]
     },
+
   ]
 })

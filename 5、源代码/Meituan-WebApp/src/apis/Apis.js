@@ -9,6 +9,8 @@ import {indexMenu} from "../commons/Data"
 
 import {FINDDATAURL} from "../commons/Data"
 
+import {MEDATAURL} from "../commons/Data"
+
 export default {
   /**
    * 获取首页轮播图图片数据
@@ -122,7 +124,19 @@ export default {
         cb(data)
       })
     })
-  }
+  },
+  /**
+   * 获取find数据
+   * @param cb
+   */
+  getMeData(cb){
+    fetch(MEDATAURL).then(res=>{
+      res.json().then(data=>{
+        cb(data)
+      })
+    })
+  },
+
 
 }
 
