@@ -1,7 +1,15 @@
 <template>
   <div>
     <div class="orderNav" v-for="(t,s) in ordernavDatas">
-      <div class="orderNavBox1"  :key="index" v-for="(i,index) in t[0].ordernav"><img :src="i.navImg" alt=""><span>{{i.spanP}}</span><div class="redCircle">1</div></div>
+
+      <div class="orderNavBox1"  :key="index" v-for="(i,index) in t[0].ordernav">
+
+        <!--点击图标跳转到子页面2-->
+        <router-link to="/order/order2">
+            <img :src="i.navImg" alt=""><span>{{i.spanP}}</span><div class="redCircle">1</div>
+        </router-link>
+      </div>
+
     </div>
   </div>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="all" style="background: #fff;">
+  <div class="all" style="background: #fff;max-height: 92vh;">
     <!-----------------header------------->
     <header>
       <p>蜀留香<i class="iconfont">&#xe604;</i></p>
@@ -9,16 +9,19 @@
       </div>
     </header>
     <!----------------main---------------->
-    <main>
+    <main v-for="(is,ts) in nearlist">
       <near-swiper></near-swiper>
-      <near-nav :nav1="nearlist[0].nav"></near-nav>
-      <!------------------nearlist------------>
-      <near-list :box1="nearlist[0].box1"></near-list>
+      <!--<div class="navbox">-->
+        <near-nav :nav1="is.nav"></near-nav>
+        <!------------------nearlist------------>
+        <near-list v-for="(i,s) in nearlist[0].box" :items="i"></near-list>
+      <!--</div>-->
     </main>
   </div>
 </template>
 
 <script>
+  import $ from "jquery"
   import NearSwiper from "../components/NearComponents/NearSwiper";
   import NearNav from "../components/NearComponents/NearNav";
   import NearList from "../components/NearComponents/NearList";
@@ -37,17 +40,45 @@
           this.nearlist = data
           console.log(this.nearlist)
         })
+      },
+      scrolltop(){
+        $("main").scroll(function () {
+          let a = $("main").scrollTop();
+          if (a>190){
+            $(".nearnav").css({
+              "position":"fixed",
+            })
+          }
+        })
       }
     },
     created(){
       //首页加载数据
       this._initPageData()
+    },
+    mounted(){
+      $(function(){
+        // alert(1)
+        $('.nearnav-li').eq(0).show();
+        $(".cli").eq(0).addClass('active');
+        $('.cli').click(function(){
+          $(this).addClass('active').siblings('li').removeClass('active');
+          var i = $(this).index();
+          $('.nearnav-li').eq(i).show().siblings('.nearnav-li').hide();
+        })
+      }),
+      this.scrolltop()
     }
   }
 </script>
 
 <style scoped>
-
+  /*.navbox{*/
+    /*position: relative;*/
+  /*}*/
+  /*.active{*/
+    /*color:red!important;*/
+  /*}*/
   .all{
     display: flex;
     flex-direction: column;
@@ -58,7 +89,10 @@
     overflow: auto;
   }
   header{
-    height: 7.8rem;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 4.8rem;
     display: flex;
     align-items: center;
     padding: 0 10px;

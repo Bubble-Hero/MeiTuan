@@ -19,7 +19,7 @@ var findDataRouter = require('./routes/findData');
 
 var meDataRouter = require('./routes/meData');
 
-
+var indexNav=require('./routes/indexNav')
 
 var app = express();
 
@@ -47,6 +47,8 @@ app.use('/indexMenu', indexMenuRouter);
 app.use('/findData',findDataRouter);
 
 app.use('/meData',meDataRouter);
+
+app.use('/indexNav',indexNav)
 
 
 // catch 404 and forward to error handler

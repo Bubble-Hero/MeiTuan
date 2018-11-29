@@ -89,8 +89,7 @@
     width: 100%;
     background:linear-gradient(to right,#17ceb8,#29c7c8,#3bb9da);
     height: 6rem;
-    top:-1rem;
-
+    top:-.1rem;
   }
   .bg{
     height: 4rem;
@@ -113,9 +112,10 @@
   }
   .section-login p{
     text-align: center;
-    white-space: nowrap;
     font-size: 1.4rem;
     font-weight: bolder;
+    margin: 0 auto ;
+    white-space: nowrap;
     margin-top: 1rem;
 
   }

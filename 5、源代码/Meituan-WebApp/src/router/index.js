@@ -12,7 +12,12 @@ import me from '@/pages/me'
 import meAll from '@/components/MeComponents/MeAll'
 import meCollect from '@/components/MeComponents/MeCollectComponents/MeCollect'
 
+//添加order两个子页面
+import orderChildren from '@/components/OrderComponents/orderSecondPages/OrderSecondPage'
+import orderFinal from "@/components/OrderComponents/OrderFinal"
 
+import findFather from "@/components/FindComponents/FindFather"
+import findChild from "@/components/FindComponents/FindChild/FindChild"
 
 Vue.use(Router)
 
@@ -35,12 +40,31 @@ export default new Router({
     {
       path: '/find',
       name: 'find',
-      component: find
+      component: find,
+      children:[
+        {path: '', redirect: "findFather"},
+        {path: 'findFather', name: "FindFather",component:findFather,meta:{navShow:true}},
+        {path: 'findChild', name: "FindChild",component:findChild}
+      ]
     },
     {
       path: '/order',
       name: 'order',
-      component: order
+      component: order,
+      children:[
+        {path: '', redirect: "orderFinal"},
+        {
+          //order默认子页面
+          path: 'orderFinal', name: 'OrderFinal', component: orderFinal,
+          //order默认子页面底部显示
+          meta:{navShow:true}
+          },
+        {
+          path: 'order2', name: 'OrderSecondPage', component: orderChildren,
+          //order点击跳转子页面底部隐藏
+          meta:{navShow:false}
+        }
+      ]
     },
     {
       path: '/me',

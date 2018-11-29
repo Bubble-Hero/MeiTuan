@@ -1,7 +1,7 @@
 
 export const sliderImgUrl="http://localhost:3000/indexSlider"//获取到了jsonp的数据 sliderImg
 export const indexMenu="http://localhost:3000/indexMenu"//获取到了jsonp的数据 indexMenu
-
+export const indexNav="http://localhost:3000/indexNav"//获取到了jsonp的数据 indexNavbox
 /**
  * 获取near页面的foodlist数据 api
  * @type {string}
