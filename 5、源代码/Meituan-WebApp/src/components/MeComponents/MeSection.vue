@@ -5,7 +5,7 @@
       <div class="radius">
         <img src="../../../static/img/m_touxiamg.gif">
       </div>
-      <p>请注册登录</p>
+      <p>请点击登录</p>
       <!--<img src="../../../static/img/m_banner.gif"/>-->
       <!--<p style="line-height: 2.8rem;font-size: 1.6rem;font-weight: bolder;">请点击登录</p>-->
       <!--<span><img src="../../../static/img/m_touxiamg.gif"></span>-->
@@ -83,7 +83,7 @@
     width: 100%;
     background:linear-gradient(to right,#17ceb8,#29c7c8,#3bb9da);
     height: 6rem;
-
+    top:-.1rem;
   }
   .bg{
     height: 4rem;
@@ -106,7 +106,7 @@
   }
   .section-login p{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bolder;
     margin: 0 auto ;
     white-space: nowrap;

@@ -17,7 +17,7 @@
 </template>
 
 <script>
-    import Swiper from '../../../static/swiper/dist/js/swiper.min'
+    import Swiper from 'swiper'
     export default {
         name: "FindNav"
     }

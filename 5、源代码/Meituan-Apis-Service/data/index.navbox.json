@@ -4,9 +4,36 @@
       "title":"助力抢神券","subtitle1":"天天限量疯抢中","subtitle2":"查看更多","img":"../../../static/img/i-hongbao.png"
     },
     "row2":[
-      {"img":"","title":""},
-      {"img":"","title":""},
-      {"img":"","title":""}
+      {"img":"../../../static/img/i-n-1.png","pri":"50元","title":"洗浴神券"},
+      {"img":"../../../static/img/i-n-2.png","pri":"10元","title":"外卖神券"},
+      {"img":"../../../static/img/i-n-3.png","pri":"10元","title":"酒店神券"}
+    ],
+    "row3":{"img":"../../../static/img/i-n-4.png"},
+    "row4":{"img":"../../../static/img/i-n-5.png"},
+    "row5":
+          [
+            [
+              {"img":"../../../static/img/i-f-1.png"},
+              {"img":"../../../static/img/i-f-2.png"}
+            ],
+            [
+              {"img":"../../../static/img/i-f-3.png"},
+              {"img":"../../../static/img/i-f-4.png"}
+            ]
+
+          ],
+    "row6":[
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园] 牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"唯美香蛋糕","subtitle":"[3店通用] 蛋糕16选1，约8英寸","price":63,"grade":"已售1441"},
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"芊芊玉指养生会所","subtitle":"[长安立交] 5个优惠套餐，任你选择","price":39,"grade":"已售2220"},
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"迈德斯客","subtitle":"[多城市]香辣鸡腿汉堡","price":28,"grade":"已售198622"},
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"魏家凉皮(科技三路店)","smallimg":"../../../static/img/i-n-5.png","subtitle":"30分钟送达","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
+      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"}
     ]
   }
 ]

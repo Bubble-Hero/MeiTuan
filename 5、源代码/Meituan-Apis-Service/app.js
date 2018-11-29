@@ -17,6 +17,8 @@ var indexMenuRouter = require('./routes/indexMenu');
 
 var findDataRouter = require('./routes/findData');
 
+var indexNav=require('./routes/indexNav')
+
 var app = express();
 
 // view engine setup
@@ -42,6 +44,7 @@ app.use('/indexMenu', indexMenuRouter);
 
 app.use('/findData',findDataRouter);
 
+app.use('/indexNav',indexNav)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
