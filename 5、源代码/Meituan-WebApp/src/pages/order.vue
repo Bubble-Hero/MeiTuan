@@ -1,25 +1,17 @@
 <template>
-    <div class="order">
-        <order-header></order-header>
-        <order-nav></order-nav>
-        <order-section></order-section>
-    </div>
+  <!--给order的所有子页面占位-->
+  <router-view></router-view>
 </template>
 
 <script>
 
-    import OrderHeader from "../components/OrderComponents/OrderHeader";
-    import OrderNav from "../components/OrderComponents/OrderNav";
-    import OrderSection from "../components/OrderComponents/OrderSection";
+
+
     export default {
-        name: "order",
-      components: {OrderSection, OrderNav, OrderHeader}
+      name: "order",
     }
 </script>
 
 <style scoped>
-.order{
-  display: flex;
-  flex-direction:column ;
-}
+
 </style>
