@@ -15,6 +15,7 @@
         </header>
         <main>
           <menu-nav></menu-nav>
+          <nav-img></nav-img>
           <!--<shop-active></shop-active>-->
           <!--<shop-school></shop-school>-->
         </main>
@@ -32,6 +33,7 @@
     // import shopActive from '../components/indexComponents/shopActive'
     // import ShopSchool from "../components/indexComponents/shopSchool";
     import BScroll from 'better-scroll'
+    import NavImg from "../components/IndexComponents/navImg";
 
 
     export default {
@@ -91,6 +93,7 @@
         }
       },
         components: {
+          NavImg,
           HeaderInput,
           slider,
           MenuNav,
