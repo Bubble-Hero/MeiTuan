@@ -9,9 +9,13 @@ import near from '@/pages/near'
 import find from '@/pages/find'
 import order from '@/pages/order'
 import me from '@/pages/me'
+
 //添加order两个子页面
 import orderChildren from '@/components/OrderComponents/orderSecondPages/OrderSecondPage'
 import orderFinal from "@/components/OrderComponents/OrderFinal"
+
+import findFather from "@/components/FindComponents/FindFather"
+import findChild from "@/components/FindComponents/FindChild/FindChild"
 
 Vue.use(Router)
 
@@ -34,7 +38,12 @@ export default new Router({
     {
       path: '/find',
       name: 'find',
-      component: find
+      component: find,
+      children:[
+        {path: '', redirect: "findFather"},
+        {path: 'findFather', name: "FindFather",component:findFather,meta:{navShow:true}},
+        {path: 'findChild', name: "FindChild",component:findChild}
+      ]
     },
     {
       path: '/order',

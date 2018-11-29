@@ -1,39 +1,38 @@
 <template>
   <div class="nearnav-li">
-    <ul class="nav-ul" v-for="(b,index) in box1">
-      <li v-for="(bb,index) in b" ><a href="">{{bb.title}}</a></li>
+    <ul class="nav-ul">
+      <li v-for="(bb,index) in items[0]">{{bb.title}}</li>
     </ul>
     <ul class="life-ul">
-      <li v-for="(ll,index) in box1">
+      <li v-for="(cc,index) in items[1]">
         <div class="left-picture">
-          <img :src="ll.pic1" alt="">
+          <img :src="cc.pic1" alt="">
         </div>
         <div class="right-other">
           <div class="other-top">
-            <p>{{ll.p1}}</p>
-            <span>1.0km</span>
+            <p>{{cc.p1}}</p>
+            <span>{{cc.span1}}</span>
           </div>
           <div class="other-cen">
-            <img src="../../../static/img/n-star.png" alt="">
-            <span>4.0分</span>
-            <span>人均￥19</span>
+            <img :src="cc.pic2" alt="">
+            <span>{{cc.span2}}</span>
+            <span>{{cc.span3}}</span>
           </div>
-          <div class="sale">多优惠+</div>
+          <div class="sale">{{cc.sale}}</div>
           <div class="last">
-            <span><img src="../../../static/img/n-tuan.png" alt=""></span>
-            <p>16.8元 招牌单人套餐，20.8元，特色鸡扒三选一，23.8元 人气单人套餐</p>
+            <span><img :src="cc.pic3" alt=""></span>
+            <p>{{cc.p2}}</p>
           </div>
         </div>
       </li>
     </ul>
   </div>
-
 </template>
 
 <script>
   export default {
     name: "NearList",
-    props:["box1"]
+    props:["items"]
   }
 </script>
 
@@ -41,23 +40,30 @@
   ::-webkit-scrollbar{
     display:none;
   }
+  .selected{
+    color: #f94024;
+    border-radius: 50px;
+    background: #ffe9e6;
+  }
+  .nearnav-li{
+    display: none;
+  }
   .nearnav-li .life-ul{
     padding: 1.5rem 1rem;
   }
   .nearnav-li .nav-ul{
-    display: -webkit-box;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    /*padding-left: 2.6rem;*/
+    padding-left: 1.6rem;
     line-height: 2rem;
+    display: flex;
   }
   .nearnav-li .nav-ul li{
-    /*width: 20%;*/
+    flex: 1;
     padding:0 2.6rem;
+    white-space: nowrap;
   }
-
-
 
   .nearnav-li .life-ul li{
     display: flex;
