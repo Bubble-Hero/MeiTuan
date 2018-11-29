@@ -16,12 +16,10 @@
 
 <style scoped>
   header{
-    width: 100%;
-    height: 5rem;
-    background: #24a9b0;
+    height: 5.6rem;
+    background:linear-gradient(to right,#17ceb8,#29c7c8,#3bb9da);
     display: flex;
     justify-content: space-between;
-    opacity:.9;
   }
   header i{font-size: 2.2rem;
     color:#fff}

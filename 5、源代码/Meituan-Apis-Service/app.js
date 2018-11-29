@@ -15,6 +15,7 @@ var ordernavRouter = require('./routes/ordernav');
 
 var indexMenuRouter = require('./routes/indexMenu');
 
+
 var app = express();
 
 // view engine setup
@@ -37,6 +38,9 @@ app.use('/nearlist', nearlistRouter);
 app.use('/ordernav', ordernavRouter);
 
 app.use('/indexMenu', indexMenuRouter);
+
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
