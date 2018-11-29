@@ -1,7 +1,9 @@
 <template>
     <div class="OrderSecond">
       <header>
-          <i class="iconfont">&#xe63c;</i>
+          <router-link to="/order">
+            <i class="iconfont">&#xe63c;</i>
+          </router-link>
           <p>我的订单</p>
           <img src="../../../../static/img/o-c-f7.jpg" alt="">
       </header>

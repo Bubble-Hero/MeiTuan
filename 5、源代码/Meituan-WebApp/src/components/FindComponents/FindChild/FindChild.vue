@@ -4,7 +4,7 @@
   <div  :key="index"  v-for="(m,index) in i[7].child">
     <!--....header...-->
     <header>
-      <a href=""><i class="iconfont headeri">&#xe63c;</i></a>
+      <router-link to="/find"><i class="iconfont headeri">&#xe63c;</i></router-link>
       <span>美团头条</span>
       <a href=""><i class="iconfont headeri">&#xe6d4;</i></a>
     </header>

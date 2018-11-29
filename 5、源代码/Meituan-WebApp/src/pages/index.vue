@@ -20,7 +20,7 @@
           <FourIMgBox :datas="i.row5"></FourIMgBox>
           <center-img :datas="i.row4"></center-img>
         </main>
-        <indexfoo></indexfoo>
+        <indexfoo v-for="(ii,ss) in datas" :datas="ii.row6"></indexfoo>
         <div class="upload" v-if="pullup" style="text-align: center;font-size: 1rem;color:#aaa">{{pullupText}}</div>
       </div>
     </div>
@@ -39,7 +39,6 @@
     import CenterImg from "../components/IndexComponents/centerImg";
     import FourIMgBox from "../components/IndexComponents/FourIMgBox";
     import Indexfoo from "../components/IndexComponents/indexfoo";
-
 
     export default {
       name: "index",

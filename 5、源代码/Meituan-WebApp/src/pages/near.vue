@@ -2,7 +2,7 @@
   <div class="all" style="background: #fff;max-height: 92vh;">
     <!-----------------header------------->
     <header>
-      <p>蜀留香<i class="iconfont">&#xe604;</i></p>
+      <p class="header-title"><i class="iconfont">&#xe64f;</i>蜀留香<i class="iconfont">&#xe505;</i></p>
       <div class="header-input">
         <input type="text" value="找附近的吃喝玩乐">
         <span></span>
@@ -72,13 +72,11 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   /*.navbox{*/
     /*position: relative;*/
   /*}*/
-  /*.active{*/
-    /*color:red!important;*/
-  /*}*/
+
   .all{
     display: flex;
     flex-direction: column;
@@ -98,6 +96,15 @@
     padding: 0 10px;
     background: #f9f9f9;
     border-bottom: .5px solid #b3b3b3;
+  }
+  header .header-title{
+    font-size:1.2rem;display: flex;align-items: center;
+    .iconfont:first-child{
+      color:#aaa;font-size: 1.3rem;margin-right: .5rem;
+    }
+    .iconfont:last-child{
+      margin-left: .4rem;font-size: 2rem;
+    }
   }
   header .header-input{
     flex: 1;

@@ -80,6 +80,7 @@
   line-height:4.4rem ;
   color: #3c4889;
   text-align:center;
+  font-weight: normal;
 }
 .orderSecIcon{
   font-size: 1.2rem;

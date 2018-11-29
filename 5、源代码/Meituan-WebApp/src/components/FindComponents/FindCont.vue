@@ -28,7 +28,10 @@
 
     export default {
       name: "FindCont",
-      props: ["ind", "m"]
+      props: ["ind", "m"],
+      mounted(){
+        //alert(1)
+      }
     }
 </script>
 

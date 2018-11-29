@@ -23,17 +23,14 @@
 
           ],
     "row6":[
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园] 牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"唯美香蛋糕","subtitle":"[3店通用] 蛋糕16选1，约8英寸","price":63,"grade":"已售1441"},
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"芊芊玉指养生会所","subtitle":"[长安立交] 5个优惠套餐，任你选择","price":39,"grade":"已售2220"},
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"迈德斯客","subtitle":"[多城市]香辣鸡腿汉堡","price":28,"grade":"已售198622"},
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"魏家凉皮(科技三路店)","smallimg":"../../../static/img/i-n-5.png","subtitle":"30分钟送达","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"},
-      {"img":"../../../static/img/i-n-5.png","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","subtitle":"[高薪软件园]牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":"门市价","d-price":"￥38","grade":"已售53"}
-    ]
+      {"img":"../../../static/img/i-like-2.jpg","bigtitle":"麦莎蒂斯蛋糕西点面包烘培","dis":"2.7km","jtitle1":["新客减9","5.7折"],"subtitle":"[高薪软件园] 牛奶奶油蛋糕1个，约4英寸，圆形","price":28,"dtitle":{"s":"门市价:￥228"},"grade":"已售53"},
+      {"img":"../../../static/img/i-like-5.jpg","bigtitle":"唯美香蛋糕","dis":"3.5km","subtitle":"[3店通用] 蛋糕16选1，约8英寸","price":63,"grade":"已售1441"},
+      {"img":"../../../static/img/i-like-6.jpg","bigtitle":"芊芊玉指养生会所","dis":"4.0km","subtitle":"[长安立交] 5个优惠套餐，任你选择","jtitle1":["新客减9"],"dtitle":{"s":"门市价:￥102"},"price":39,"grade":"已售2220"},
+      {"img":"../../../static/img/i-like-4.jpg","bigtitle":"迈德斯客","dis":"5.8km","subtitle":"[多城市]香辣鸡腿汉堡","price":28,"grade":"已售198622"},
+      {"img":"../../../static/img/i-like-7.jpg","bigtitle":"魏家凉皮(科技三路店)","dis":"5.9km","smallimg":"../../../static/img/i-n-5.png","dtitle":{"s":"门市价:￥32"},"jtitle1":["新用户立减15元，首次使用美团支付最高再减3元"],"subtitle":"30分钟送达","price":"42","q-price":"￥28","s-price":"￥7","grade":"已售4643"},
+      {"img":"../../../static/img/i-like-8.jpg","bigtitle":"21K精品KTV","dis":"1.2km","subtitle":"[唐延路南段]5个优惠套餐，任你选择","price":9.9,"grade":"已售967"},
+      {"img":"../../../static/img/i-like-9.jpg","bigtitle":"哈根达斯","dis":"6.5km","jtitle1":["新客减18"],"subtitle":"[多城市]100元代金券+35元冰激凌单球1份","price":100,"dtitle":{"s":"门市价:￥128"},"grade":"已售20394"},
+      {"img":"../../../static/img/i-like-10.jpg","bigtitle":"伊可其主题酒店(鱼化寨店)","dis":"9.8km","subtitle":"高新技术开发区 恒大城","price":226}
+      ]
   }
 ]
