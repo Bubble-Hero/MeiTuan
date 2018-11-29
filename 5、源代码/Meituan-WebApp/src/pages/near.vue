@@ -13,7 +13,7 @@
       <near-swiper></near-swiper>
       <near-nav :nav1="nearlist[0].nav"></near-nav>
       <!------------------nearlist------------>
-      <near-list></near-list>
+      <near-list :box1="nearlist[0].box1"></near-list>
     </main>
   </div>
 </template>

@@ -1,16 +1,16 @@
 <template>
   <div class="nearnav-li">
-    <ul class="nav-ul">
-      <li v-for="(p,index) in nav2"><a href="">{{p.title}}</a></li>
+    <ul class="nav-ul" v-for="(b,index) in box1">
+      <li v-for="(bb,index) in b" ><a href="">{{bb.title}}</a></li>
     </ul>
     <ul class="life-ul">
-      <li>
+      <li v-for="(ll,index) in box1">
         <div class="left-picture">
-          <img src="../../../static/img/n-f-1.jpg" alt="">
+          <img :src="ll.pic1" alt="">
         </div>
         <div class="right-other">
           <div class="other-top">
-            <p>麦莎蒂斯蛋糕西点面包麦莎蒂斯蛋糕西点面包</p>
+            <p>{{ll.p1}}</p>
             <span>1.0km</span>
           </div>
           <div class="other-cen">
@@ -33,7 +33,7 @@
 <script>
   export default {
     name: "NearList",
-    props:["nav2"]
+    props:["box1"]
   }
 </script>
 
