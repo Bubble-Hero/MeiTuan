@@ -90,6 +90,8 @@
   }
   .radius{
     height: 2.2rem;
+    width:100%;
+    display: flex;
     background: #fff;
     position: relative;
     border-top-left-radius: 65%;
@@ -98,16 +100,16 @@
   .radius img{
     width: 6rem;
     height: 6rem;
-    position: absolute;
     border-radius: 50%;
-    top: -4rem;
-    left: 40%;
+    margin: auto;
+    margin-top: -4rem;
   }
   .section-login p{
-    width: 8.6rem;
+    text-align: center;
     font-size: 1.8rem;
     font-weight: bolder;
     margin: 0 auto ;
+    white-space: nowrap;
   }
   .section-login span{
     position: absolute;
