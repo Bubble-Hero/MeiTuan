@@ -27,7 +27,7 @@
         }
       }
       .tt-row2{
-        font-size: 1.1rem;
+        font-size: 1.1rem;white-space: nowrap;
       }
       .tt-row3{
           display: flex;align-items: center;justify-content: space-between;
@@ -44,7 +44,7 @@
       .tt-row4{
         color:#e85b4d;
         span{
-          border:1px solid #f0aaa4;border-radius: .3rem;padding: .1rem .4rem;margin-right: 1rem;
+          border:1px solid #f0aaa4;border-radius: .3rem;padding: .1rem .4rem;margin-right: 1rem;white-space: nowrap;
         }
       }
     }
