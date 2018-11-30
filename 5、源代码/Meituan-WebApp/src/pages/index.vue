@@ -1,12 +1,13 @@
 <template>
-  <div id="Wrapp" class="wrapper" ref="wrapper" style="max-height: 92vh;">
+  <div id="Wrapp" class="wrapper" ref="wrapper" style="max-height: 92vh;background-color: #fff">
     <div class="scroller">
-      <div class="download" v-if="pulldown" style="text-align: center;align-items: center;font-size: 1rem;color:#aaa;padding:.1rem;position: relative;display: flex">
-        <img src="" width="25" height="50" style="margin-left: auto;margin-right: .1em">
-        <div style="margin-right: auto;">
-          <p style="font-size: 1.1rem;color:#777">{{pulldownsubTxt}}</p>
-          {{pulldownTxt}}
-        </div>
+      <div class="download" v-if="pulldown" style="text-align: center;align-items: center;font-size: 1rem;color:#aaa;padding:.1rem;position: relative;display: flex;flex-direction: column">
+        <img class="refreshImg" src="../../static/img/refresh-1.png" width="39" height="38" style="margin: auto;">
+        <img src="../../static/img/refresh-footer.png" width="39" height="10" style="margin: auto;position: relative;top:-.05rem;">
+        <!--<div style="margin-right: auto;">-->
+          <!--<p style="font-size: 1.1rem;color:#777">{{pulldownsubTxt}}</p>-->
+          <!--{{pulldownTxt}}-->
+        <!--</div>-->
       </div>
       <header-input></header-input>
       <div id="indexChild" >
@@ -45,9 +46,11 @@
       data() {
         return {
           datas:[],
+          refreshtimer:null,
+          time:0,
           pulldown:false,
-          pulldownTxt:"松手更新",
-          pulldownsubTxt:"让购物更便捷",
+          pulldownTxt:"",
+          pulldownsubTxt:"",
           pullup:false,
           pullupText:"获取更多....",
           pullDirection:0,
@@ -82,6 +85,10 @@
         _refreshAlert(text) {
           text = text || '操作成功'
           $(".download").stop().slideUp(500)
+          //停止定时器
+          clearInterval(this.refreshtimer)
+          this.refreshtimer=null
+          this.time=0
         }
       },
         components: {
@@ -125,7 +132,7 @@
               if(scroller.y > 0){
                 //防止jquerybug先停止之前的动画
                 $(".download").stop()
-                this.pulldownTxt = "松手更新"
+                this.pulldownTxt = ""
                 this.pulldown = true;
                 this.pullDirection = 1
               }
@@ -133,7 +140,7 @@
               if(scroller.y > 10 && scroller.y <=30){
                 //高度大于10再显示
                 $(".download").stop().show()
-                this.pulldownTxt = "松手更新"
+                this.pulldownTxt = ""
                 this.pullDirection = 1
               }
 
@@ -151,21 +158,34 @@
                // console.log("是否在底部:"+(scroller.y-scroller.maxScrollY))
               }
             })
+
             scroller.on("scrollEnd", ()=> {
               if(this.pullDirection ==1){
-                this.pulldownTxt = "更新中..."
+                this.pulldownTxt = ""
+                this.refreshtimer=setInterval(()=>{
+                  if(this.time<8){
+                    this.time++
+                    let srcUrl="../../static/img/refresh-"+this.time+".png"
+                    $(".refreshImg").attr("src",srcUrl)
+                  }else{
+                    this.time=1
+                    let srcUrl="../../static/img/refresh-"+1+".png"
+                    $(".refreshImg").attr("src",srcUrl)
+                  }
+                },40)
+
                 setTimeout(()=>{
                   /*
                    * 这里发送ajax刷新数据
                    * 刷新后,后台只返回第1页的数据,无论用户是否已经上拉加载了更多
                   */
                   // 恢复文本值
-                  this.pulldownTxt = '刷新暂且成功';
+                  this.pulldownTxt = '';
                   // 刷新成功后的提示
                   this._refreshAlert('刷新成功');
                   // 刷新列表后,重新计算滚动区域高度
                   //scroll.refresh();
-                }, 1000);
+                }, 1800);
               }else if(this.pullDirection == -1){
 
                 //如果当前下拉的数比总的scrollerY小,获取新数据
