@@ -3,6 +3,8 @@ import {sliderImgUrl} from '../commons/Data'
 import {indexNav} from "../commons/Data";
 
 import {NEARLISTURL} from "../commons/Data"
+import {NEARCHILDURL} from "../commons/Data"
+
 import {ORDERNAVURL} from "../commons/Data"
 
 import {indexMenu} from "../commons/Data"
@@ -97,6 +99,18 @@ export default {
    */
   getNearlistData(cb) {
     fetch(NEARLISTURL).then(res => {
+      res.json().then(data => {
+        cb(data)
+      })
+    })
+  },
+
+  /**
+   * 获取near页面的nearlist数据
+   * @param cb
+   */
+  getNearchildData(cb) {
+    fetch(NEARCHILDURL).then(res => {
       res.json().then(data => {
         cb(data)
       })

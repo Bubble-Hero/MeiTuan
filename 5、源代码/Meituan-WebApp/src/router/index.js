@@ -9,6 +9,12 @@ import near from '@/pages/near'
 import find from '@/pages/find'
 import order from '@/pages/order'
 import me from '@/pages/me'
+
+import second from '@/components/NearComponents/NearChild/second'
+import NearChild from '@/components/NearComponents/NearChild/NearChild'
+
+
+//添加me两个子页面
 import meAll from '@/components/MeComponents/MeAll'
 import meCollect from '@/components/MeComponents/MeCollectComponents/MeCollect'
 import meLogin from '@/components/MeComponents/MeLoginComponents/MeLogin'
@@ -47,8 +53,9 @@ export default new Router({
       name: 'near',
       component: near, //组建名与上面的import 后面的名字相同
       children:[
-        {path: '', redirect: "",meta:{navShow:true}},
-        // {path: 'meishi', name: "meishi",component:meishi,meta:{navShow:false}},
+        {path: '', redirect: "second"},
+        {path: 'second', name: "second",component:second,meta:{navShow:true}},
+        {path: 'nearchild', name: "NearChild",component:NearChild,meta:{navShow:false}},
       ]
     },
     {
@@ -58,7 +65,7 @@ export default new Router({
       children:[
         {path: '', redirect: "findFather"},
         {path: 'findFather', name: "FindFather",component:findFather,meta:{navShow:true}},
-        {path: 'findChild', name: "FindChild",component:findChild}
+        {path: 'fxindChild', name: "FindChild",component:findChild}
       ]
     },
     {

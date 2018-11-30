@@ -6,7 +6,7 @@
     <header>
       <router-link to="/find"><i class="iconfont headeri">&#xe63c;</i></router-link>
       <span>美团头条</span>
-      <a href=""><i class="iconfont headeri">&#xe6d4;</i></a>
+      <p><i class="iconfont headeri" @click="goTop">&#xe6d4;</i></p>
     </header>
 
     <section class="cont">
@@ -56,20 +56,52 @@
     <footer>
       <input type="text" placeholder="评论一下"/>
       <div class="share">
-        <a href="">
+        <p class="footeriShare" @click="goTop">
           <i class="iconfont footeri">&#xe6d4;</i>
           <span>分享</span>
-        </a>
-        <a href="">
+        </p>
+        <p>
           <i class="iconfont footeri">&#xe5e3;</i>
           <span>评论</span>
-        </a>
-        <a href="">
+        </p>
+        <p>
           <i class="iconfont footeri">&#xe637;</i>
           <span>收藏</span>
-        </a>
+        </p>
       </div>
     </footer>
+
+    <!--..shareTo...-->
+    <div class="shareTo">
+      <p>分享到</p>
+      <div class="shareToi">
+        <a href="">
+          <i class="iconfont shareToi01">&#xe61c;</i>
+          <span>微信好友</span>
+        </a>
+          <a href="">
+            <i class="iconfont shareToi02">&#xe5e3;</i>
+            <span>朋友圈</span>
+          </a>
+          <a href="">
+            <i class="iconfont shareToi03">&#xe6d3;</i>
+            <span>QQ</span>
+          </a>
+          <a href="">
+            <i class="iconfont shareToi04">&#xe658;</i>
+            <span>微博</span>
+          </a>
+          <a href="">
+            <i class="iconfont shareToi05">&#xe648;</i>
+            <span>github</span>
+          </a>
+          <a href="">
+            <i class="iconfont shareToi06">&#xe719;</i>
+            <span>更多</span>
+          </a>
+      </div>
+      <div class="off"  @click="goBottom">取消</div>
+    </div>
 
   </div>
   </div>
@@ -78,6 +110,7 @@
 
 <script>
   import findData from "../../../apis/Apis"
+  import $ from "jquery"
     export default {
       name: "FindChild",
       data() {
@@ -95,11 +128,19 @@
             this.findDatas = data;
             console.log(this.findDatas)
           })
+        },
+        goTop(){
+          //  点击分享
+          $(".shareTo").slideToggle("slow").css({display: "block"});
+        },
+        goBottom(){
+          //  点击分享
+          $(".shareTo").slideToggle("slow").css({display: "none"});
         }
       },
-      created(){
-        this._initFindData()
-      }
+        created() {
+          this._initFindData()
+        }
     }
 </script>
 
@@ -252,7 +293,7 @@
     font-size: 1.2rem;
     color: #848484;
   }
-  .share a{
+  .share p{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -261,5 +302,74 @@
     font-size: 1.4rem;
     color: #838383;
     text-align: center;
+  }
+   /*....shareTo....*/
+  .shareTo{
+    width: 94%;
+    margin: 3%;
+    background: #daf0ee;
+    border-radius: .8rem;
+    margin-bottom: 6rem;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none;
+  }
+  .shareTo p{
+    width: 100%;
+    height: 5.6rem;
+    line-height: 5.6rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #272727;
+    font-weight: bold;
+  }
+  .shareToi{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem 0;
+  }
+  .shareToi a{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .shareToi a i{
+    font-size:3.2rem ;
+    text-align: center;
+  }
+  .shareToi a span{
+    font-size: 1.2rem;
+    text-align: center;
+    margin:.8rem;
+  }
+  .off{
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #8f8b8b;
+    border-top: .1rem solid #cecccc;
+  }
+  .shareToi01{
+    color: #45c77c;
+  }
+  .shareToi02{
+    color: #1ae871;
+  }
+  .shareToi03{
+    color: #30cff1;
+  }
+  .shareToi04{
+    color: #edc00e;
+  }
+  .shareToi05{
+    color: #565348;
+  }
+  .shareToi06{
+    color: #18dba6;
   }
 </style>
