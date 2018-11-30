@@ -49,53 +49,83 @@
         </div>
 
         <div class="combo">
-        <p class="title">食堂套餐</p>
-        <ul>
-          <li v-for="(p,index) in i.combo">
-            <img :src="p.pic1" alt="">
-            <div class="left">
-              <p>{{p.p1}}</p>
-              <p>{{p.p2}}</p>
-              <p>{{p.p3}}</p>
-              <div class="last">
-                <span>{{p.span1}}</span>
-                <span>{{p.span2}}</span>
-                <span>{{p.span3}}</span>
-                <span></span>
-                <span>{{p.span4}}</span>
-              </div>
-              <!----接口--->
-              <div class="buy">{{p.buy}}</div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-        <div class="eval">
-          <div class="title">
-            <span>餐厅评价</span>
-            <span>更多评论(239条)</span>
-          </div>
+          <p class="title">食堂套餐</p>
           <ul>
-            <li>
-              <img src="../../../../static/img/n-t-1.png" alt="" class="img">
+            <li v-for="(p,index) in i.combo">
+              <img :src="p.pic1" alt="">
               <div class="left">
-                <div>
-                <p class="pt">dFc4848367939<span>2018-11-21</span></p>
-                <img src="../../../../static/img/n-star.png" alt="" class="one">
-                <p>最不爱评论的我来了，喜欢他家的服务，更喜欢他们的甜品，实惠又好吃，这样的地啊一定可以长久，虽然买的小蛋糕，但是刀叉什么都全配</p>
-                <div class="pict">
-                  <img src="../../../../static/img/n-p-2.png" alt="">
-                  <img src="../../../../static/img/n-p-2.png" alt="">
-                  <img src="../../../../static/img/n-p-2.png" alt="">
-                  <img src="../../../../static/img/n-p-2.png" alt="">
+                <p>{{p.p1}}</p>
+                <p>{{p.p2}}</p>
+                <p>{{p.p3}}</p>
+                <div class="last">
+                  <span>{{p.span1}}</span>
+                  <span>{{p.span2}}</span>
+                  <span>{{p.span3}}</span>
+                  <span></span>
+                  <span>{{p.span4}}</span>
                 </div>
-                <p>/四英寸的牛奶奶油蛋糕/</p>
-                </div>
+                <!----接口--->
+                <div class="buy">{{p.buy}}</div>
               </div>
             </li>
           </ul>
         </div>
+
+        <div class="eval">
+          <div class="title">
+            <span>餐厅评价</span>
+            <span>更多评论{{i.title.tit}}</span>
+          </div>
+          <ul>
+            <li v-for="(c,index) in i.evall">
+              <img :src="c.pic1" alt="" class="img">
+              <div class="left">
+                <div>
+                <p class="pt">{{c.p1}}<span>{{c.span2}}</span></p>
+                <img :src="c.pic2" alt="" class="one">
+                <p>{{c.p2}}</p>
+                <div class="pict">
+                  <img :src="c.pic3" alt="">
+                  <img :src="c.pic4" alt="">
+                  <img :src="c.pic5" alt="">
+                  <img :src="c.pic6" alt="">
+                </div>
+                <p>{{c.p3}}</p>
+                <p>{{c.p4}}</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <p class="la">{{i.more.look}}</p>
+        </div>
+
+        <div class="busin">
+          <p>商家信息</p>
+          <p>营业时间</p>
+          <p>{{i.time.ti}}</p>
+          <p>营业许可资质<i class="iconfont">&#xe63b;</i></p>
+        </div>
+
+      <div class="combo near">
+        <p class="title">附近吃喝玩乐</p>
+        <ul>
+          <li v-for="(d,index) in i.near">
+            <img :src="d.pic1" alt="">
+            <div class="left">
+              <p>{{d.p1}}</p>
+              <p>{{d.p2}}</p>
+              <p>{{d.p3}}</p>
+              <div class="last">
+                <span>{{d.span1}}</span>
+                <span>{{d.span2}}</span>
+                <span>{{d.span3}}</span>
+                <span></span>
+                <span>{{d.span4}}</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
     </main>
   </div>
@@ -344,6 +374,7 @@
     .eval{
       padding-left: 1rem;
       margin-top: 2rem;
+      margin-bottom: 3rem;
       .title {
         position: relative;
         span:nth-of-type(1){
@@ -361,8 +392,8 @@
         display: flex;
         padding-top: 1.3rem;
         .img{
-          width: 5rem;
-          height: 5rem;
+          width: 4.5rem;
+          height: 4.5rem;
         }
         .left{
           flex: 1;
@@ -386,14 +417,67 @@
             }
             .pict{
              display: flex;
+              /*justify-content: space-around;*/
               img{
                 width: 6.1rem;
                 height: 6.1rem;
                 flex: 1;
-                padding-right: 1rem;
+                padding-right: .5rem;
               }
             }
+            p:nth-last-of-type(1){
+              margin-top: .8rem;
+            }
           }
+        }
+      }
+      .la{
+        line-height: 4rem;
+        border-bottom: .05rem solid #ccc;
+        padding-left: 5.5rem;
+        color: #000;
+      }
+    }
+    .busin{
+      padding-left: 1rem;
+      padding-bottom: 3.5rem;
+      color: #000;
+      p:nth-of-type(1){
+        font-size: 1.7rem;
+        font-weight: 900;
+      }
+      p:nth-of-type(2){
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: .8rem;
+      }
+      p:nth-of-type(3){
+        padding-bottom: 1.5rem;
+      }
+      p:nth-of-type(4){
+        line-height: 4rem;
+        border-top: .05rem solid #ccc;
+        border-bottom: .05rem solid #ccc;
+        position: relative;
+        .iconfont{
+          position: absolute;
+          right: 1rem;
+          top: 1.5rem;
+        }
+      }
+    }
+    .near{
+      margin-bottom: 3rem;
+      li .left{
+
+        .last span:nth-of-type(1) {
+          color: red;
+          font-weight: 700;
+        }
+       .last span:nth-of-type(2) {
+         color: red;
+         border: .05rem solid red;
+         border-radius: .03rem;
         }
       }
     }

@@ -3,12 +3,6 @@
 </template>
 
 <script>
-  import $ from "jquery"
-  import NearSwiper from "../components/NearComponents/NearSwiper";
-  import NearNav from "../components/NearComponents/NearNav";
-  import NearList from "../components/NearComponents/NearList";
-  import Apis from "../apis/Apis";
-
   export default {
     name: "near",
     components: {NearList, NearNav, NearSwiper},
