@@ -11,6 +11,9 @@ import order from '@/pages/order'
 import me from '@/pages/me'
 import meAll from '@/components/MeComponents/MeAll'
 import meCollect from '@/components/MeComponents/MeCollectComponents/MeCollect'
+import meLogin from '@/components/MeComponents/MeLoginComponents/MeLogin'
+import meSectionCon1 from '@/components/MeComponents/MeLoginComponents/MeSectionCon1'
+import meSectionCon2 from '@/components/MeComponents/MeLoginComponents/MeSectionCon2'
 
 //添加order两个子页面
 import orderChildren from '@/components/OrderComponents/orderSecondPages/OrderSecondPage'
@@ -84,8 +87,22 @@ export default new Router({
       children: [
         {path:'',redirect:'meAll'},
         //xianyi
-        {path:'meAll',name:'MeAll',component:meAll,meta:{navShow:true}},
-        {path:'meCollect',name:'MeCollect',component:meCollect,meta:{navShow:false}}
+        {path:'meAll',name:'MeAll',component:meAll,
+          //me默认子页面底部显示
+          meta:{navShow:true}},
+        //收藏页面
+        {path:'meCollect',name:'MeCollect',component:meCollect,
+          //me默认子页面底部隐藏
+          meta:{navShow:false}},
+        {path:'meLogin',name:'MeLogin',component:meLogin,
+          //me默认子页面底部隐藏
+          meta:{navShow:false},
+          children:[
+            {path:'',redirect:'meSectionCon1'},
+            {path:'meSectionCon1',name:'MeSectionCon1',component:meSectionCon1},
+            {path:'meSectionCon2',name:'MeSectionCon2',component:meSectionCon2}
+          ]
+        }
       ]
     },
 
