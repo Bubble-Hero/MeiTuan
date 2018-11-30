@@ -272,6 +272,7 @@
         }
         .iconfont{
           line-height: 2rem;
+          font-size: 1rem;margin-left: .5rem;
         }
       }
     }

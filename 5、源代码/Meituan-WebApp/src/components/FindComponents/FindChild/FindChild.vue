@@ -307,9 +307,9 @@
   .shareTo{
     width: 94%;
     margin: 3%;
+    margin-bottom: 1rem;
     background: #daf0ee;
     border-radius: .8rem;
-    margin-bottom: 6rem;
     z-index: 3;
     position: fixed;
     left: 0;

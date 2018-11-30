@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!--<div>-->
     <router-link to="/find/findChild">
     <div class="findCont">
       <div class="up">
@@ -21,7 +21,7 @@
       </div>
     </div>
     </router-link>
-  </div>
+  <!--</div>-->
 </template>
 
 <script>

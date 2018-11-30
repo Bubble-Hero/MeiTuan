@@ -17,6 +17,7 @@
 </template>
 
 <script>
+  import $ from "jquery"
     import Swiper from 'swiper'
     export default {
         name: "FindNav",
@@ -27,15 +28,16 @@
       },
       mounted(){
         new Swiper('.swiper-container');
+        // let high=$("header")[0].offsetHeight
+        // $(".findNav").css({
+        //   "top":"51px"
+        // })
       }
     }
 
 </script>
 
 <style scoped>
-  .findNav{
-    margin-top: 5rem;
-  }
   .rows {
     width: 100%;
     /*overflow-x: scroll;*/
@@ -45,6 +47,7 @@
     padding: 0 3rem;
     background: white;
     border: 1px solid #f6f6f6;
+
   }
   .swiper-slide{
     width: auto!important;
