@@ -10,15 +10,10 @@
     <button>登录</button>
     <div class="login-type">
       <router-link to="/me/meLogin/meSectionCon1">
-      <p>验证码登录</p>
+      <p class="ft">验证码登录</p>
       </router-link>
-      <p>忘记密码</p>
+      <p class="ft">忘记密码</p>
     </div>
-    <div class="type">
-      <img src="../../../../static/img/m_l1.gif">
-      <img src="../../../../static/img/m_l2.gif">
-    </div>
-    <p class="tip">登录代表你已同意<span>美团用户协议</span>、<span>隐私政策</span></p>
   </div>
 
 </template>
@@ -52,6 +47,7 @@
 </script>
 
 <style scoped>
+
   .section-pass{
     position: relative;
     height: 5.6rem;
@@ -65,10 +61,13 @@
     top: 50%;
     font-size: 1.2rem;
   }
+  .ft{
+    font-size: 1.4rem;
+  }
     input{
     width: 100%;
     color: #111;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
       height: 5.6rem;
     border:none;
       outline: none;
@@ -78,7 +77,7 @@
     height: 4.6rem;
     line-height: 4.6rem;
     outline: none;
-    border-radius: 0.5rem;
+    border-radius: 3rem;
     border: none;
     background: #b1f2ee;
     color: #fff;
@@ -91,25 +90,5 @@
     height: 6.2rem;
     line-height: 6.2rem;
   }
-  .type{
-    height: 11.5rem;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 3rem;
-  }
-  .type img{
-    width: 5.6rem;
-    height: 5.6rem;
-    border-radius: 50%;
-    margin: auto 0;
-  }
-  .tip{
-    color: #8c8c8c;
-  height: 2.8rem;
 
-  }
-  section .tip span{
-    color: #1bbfb3;
-  }
 </style>

@@ -131,11 +131,11 @@
         },
         goTop(){
           //  点击分享
-          $(".shareTo").slideToggle("slow").css({display: "block"});
+          $(".shareTo").stop().slideToggle("slow")
         },
         goBottom(){
           //  点击分享
-          $(".shareTo").slideToggle("slow").css({display: "none"});
+          $(".shareTo").stop().slideToggle("slow")
         }
       },
         created() {

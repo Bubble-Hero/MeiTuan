@@ -65,7 +65,7 @@ export default new Router({
       children:[
         {path: '', redirect: "findFather"},
         {path: 'findFather', name: "FindFather",component:findFather,meta:{navShow:true}},
-        {path: 'fxindChild', name: "FindChild",component:findChild}
+        {path: 'findChild', name: "FindChild",component:findChild}
       ]
     },
     {

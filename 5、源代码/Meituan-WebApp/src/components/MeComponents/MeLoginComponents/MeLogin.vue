@@ -13,12 +13,19 @@
       <h2>欢迎登录美团</h2>
       <div class="section-tel">
         <div class="area">
-          <p>+86</p>
-          <i class="iconfont icon-icon-copy"></i>
+          <p class="eightsix">+86</p>
+          <i class="iconfont">&#xe63b;</i>
         </div>
         <div class="tel"><input type="tel" placeholder="请输入手机号"/></div>
       </div>
       <router-view></router-view>
+      </div>
+      <div class="login-footer">
+        <div class="type">
+          <img src="../../../../static/img/m_l1.gif">
+          <img src="../../../../static/img/m_l2.gif">
+        </div>
+        <p class="tip">登录代表你已同意<a href="https://www.meituan.com/about/terms"><span>美团用户协议</span>、<span>隐私政策</span></a></p>
       </div>
     </section>
   </div>
@@ -34,6 +41,34 @@
 </script>
 
 <style scoped>
+  .all{
+    background-color: #fff;
+  }
+  .login-footer{
+    position: fixed;
+    bottom: 2rem;
+    width: 100%;
+    left: 0;
+  }
+  .type{
+    height: 11.5rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8rem;
+  }
+  .tip{
+    color: #8c8c8c;
+    height: 2.8rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .type img{
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    margin: auto 0;
+  }
   header{
     height: 5rem;
     background:#fff;
@@ -56,6 +91,13 @@
     margin: 0 2rem;
 
   }
+
+  section .tip span{
+    color: #1bbfb3;
+  }
+  .eightsix{
+    font-size: 1.6rem;
+  }
   section h2{
     height: 8rem;
     text-align: center;
@@ -75,10 +117,12 @@
     display: flex;
     justify-content: space-between;
     color: #575757;
+    align-items: center;
   }
   .area i{
-    margin: auto 0;
+    margin-left: .5rem;
     font-size: 1.2rem;
+    margin-top: .3rem;
   }
   .tel{
     width: 96%;
@@ -89,7 +133,7 @@
     height: 100%;
     padding-left: 1.2rem;
     color: #111;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     height: 2.6rem;
     border:none
   }
