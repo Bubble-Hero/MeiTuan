@@ -86,9 +86,6 @@
 </script>
 
 <style lang="scss" scoped>
-  /*.navbox{*/
-    /*position: relative;*/
-  /*}*/
 
   .all{
     display: flex;
