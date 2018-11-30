@@ -4,9 +4,15 @@
     <div class="section-login">
       <div class="bg"></div>
       <div class="radius">
-        <img src="../../../static/img/m_touxiang.gif">
+        <router-link to="/me/meLogin" class="loginBox">
+          <div>
+            <img src="../../../static/img/m_touxiang.gif">
+          </div>
+        </router-link>
       </div>
-      <p>请点击登录</p>
+      <router-link to="/me/meLogin">
+        <p>请点击登录</p>
+      </router-link>
       <!--<img src="../../../static/img/m_banner.gif"/>-->
       <!--<p style="line-height: 2.8rem;font-size: 1.6rem;font-weight: bolder;">请点击登录</p>-->
       <!--<span><img src="../../../static/img/m_touxiamg.gif"></span>-->
@@ -103,12 +109,16 @@
     border-top-left-radius: 65%;
     border-top-right-radius: 65%;
   }
+  .radius div{
+    margin: auto;
+    margin-top: -3rem;
+    border-radius: 50%;
+    border: none;
+  }
   .radius img{
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    margin: auto;
-    margin-top: -3rem;
   }
   .section-login p{
     text-align: center;
@@ -118,6 +128,9 @@
     white-space: nowrap;
     margin-top: 1rem;
 
+  }
+  .loginBox{
+    margin: auto;
   }
   .section-login span{
     position: absolute;
