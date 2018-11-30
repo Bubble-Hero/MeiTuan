@@ -143,11 +143,6 @@
     display: flex;
     padding-top: .4rem;
   }
-  /*.nearnav-li .life-ul li a .right-other .last span{*/
-    /*width: 1.5rem;*/
-    /*height: 1.5rem;*/
-    /*margin-top: .4rem;*/
-  /*}*/
   .nearnav-li .life-ul li a .right-other .last img{
     width: 1.5rem;
     height: 1.5rem;
