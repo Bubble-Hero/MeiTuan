@@ -1,7 +1,7 @@
 <template>
   <div class="nearnav-li">
     <ul class="nav-ul">
-      <li v-for="(bb,index) in items[0]">{{bb.title}}</li>
+      <li v-for="(bb,index) in items[0]"><a>{{bb.title}}</a></li>
     </ul>
     <ul class="life-ul">
       <li v-for="(cc,index) in items[1]">
@@ -36,20 +36,15 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   ::-webkit-scrollbar{
     display:none;
-  }
-  .selected{
-    color: #f94024;
-    border-radius: 50px;
-    background: #ffe9e6;
   }
   .nearnav-li{
     display: none;
   }
   .nearnav-li .life-ul{
-    padding: 1.5rem 1rem;
+    padding: .5rem 1rem;
   }
   .nearnav-li .nav-ul{
     width: 100%;
@@ -58,16 +53,27 @@
     padding-left: 1.6rem;
     line-height: 2rem;
     display: flex;
+    li{
+      white-space: nowrap;
+      margin-right: .8rem;
+      font-size: 1.2rem;
+      a{
+        display: block;
+        border-radius: 2rem;
+        padding:.4rem 1rem;
+      }
+    }
+    li:first-child a{
+      background: #ffe9e6;
+      color: #f94024;
+    }
   }
-  .nearnav-li .nav-ul li{
-    flex: 1;
-    padding:0 2.6rem;
-    white-space: nowrap;
+  .nearnav-li .nav-ul li:first-child{
+    margin-left: 1rem;
   }
-
   .nearnav-li .life-ul li{
     display: flex;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
     padding: 1.2rem 0;
   }
   .nearnav-li .life-ul li .left-picture{

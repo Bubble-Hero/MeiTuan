@@ -6,10 +6,9 @@
 
         <!--点击图标跳转到子页面2-->
         <router-link to="/order/order2">
-            <img :src="i.navImg" alt=""><span>{{i.spanP}}</span><div class="redCircle">1</div>
+            <img :src="i.navImg" alt=""><span>{{i.spanP}}</span><div class="redCircle">4</div>
         </router-link>
       </div>
-
     </div>
   </div>
 
