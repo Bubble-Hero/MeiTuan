@@ -21,7 +21,7 @@ header{
   display: flex;
   justify-content: center;
   background: #f9f9f9;
-  border-bottom: 1px solid #bdbdbd;
+  border-bottom: 1px solid #eee;
   position: fixed;
   left: 0;
   top: 0;

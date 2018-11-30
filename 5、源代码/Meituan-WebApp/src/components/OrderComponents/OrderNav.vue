@@ -51,7 +51,7 @@
 <style scoped>
   .orderNav{
     display: flex;
-    padding: 5.8rem 0 .8rem;
+    padding-bottom:.8rem;
     /*padding: .1rem .1rem 0;*/
     background: #f7f8fb;
 

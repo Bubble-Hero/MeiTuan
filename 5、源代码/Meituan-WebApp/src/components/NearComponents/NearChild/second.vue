@@ -56,30 +56,37 @@
           var i = $(this).index();
           $('.nearnav-li').eq(i).show().siblings('.nearnav-li').hide();
         })
-      }),
-        $(function () {
-          $("main").scroll(function() {
-            let offSetTop = $("main").scrollTop();
-            if(offSetTop > 192){
-              $(".nearnav").css({
-                "position": "fixed",
-                "left":"0",
-                "top":"4.8rem",
-                "border-bottom":".1rem solid #ccc",
-              })
-              $(".nearnav-li").css({
-                "marginTop":"51.39px"
-              })
-            }else{
-              $(".nearnav").css({
-                "position": "static",
-                "border-bottom":"0rem solid #ccc"
-              })
-              $(".nearnav-li").css({
-                "marginTop":"0"
-              })
-            }
-          })
+      })
+        document.addEventListener("touchmove",function(e) {
+          e.preventDefault;
+          //获取头部高度
+          let hig=$("header")[0].offsetHeight
+          //获取slider高度
+          let higtwo=$(".sliderBox")[0].offsetHeight
+
+          let Hig=$(".nearnav")[0].offsetHeight
+          //console.log(hig)
+         // alert(1)
+          let offSetTop = $("main").scrollTop();
+          if(offSetTop > higtwo){
+            $(".nearnav").css({
+              "position": "fixed",
+              "left":"0",
+              "top":hig,
+              "border-bottom":".1rem solid #eee",
+            })
+            $(".nearnav-li").css({
+              "marginTop":Hig
+            })
+          }else{
+            $(".nearnav").css({
+              "position": "static",
+              "border-bottom":"0"
+            })
+            $(".nearnav-li").css({
+              "marginTop":"0"
+            })
+          }
         })
     }
   }
@@ -127,8 +134,8 @@
     height: 1.5rem;
     background: url("../../../../static/img/n-search.png");
     background-size: 1.5rem 100%;
-    top: 1rem;
-    left: 6.2rem;
+    left: 18%;
+    top:25%
   }
   header .header-input input{
     width: 100%;

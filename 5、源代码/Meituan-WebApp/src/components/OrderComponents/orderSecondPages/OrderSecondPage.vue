@@ -16,7 +16,6 @@
           <p>待评价</p>
           <p>退款/售后</p>
       </div>
-
           <!-- Swiper -->
           <div class="swiper-container">
             <div class="swiper-wrapper" style="height: 100%;">
@@ -80,8 +79,6 @@
               </div>
             </div>
           </div>
-
-
           <!--点击上方头部弹出框框-->
           <div class="headerClickBox">
               <p>全部订单</p>

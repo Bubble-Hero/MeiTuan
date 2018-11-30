@@ -136,7 +136,7 @@
                 this.pulldownTxt = ""
                 this.pulldown = true;
                 this.pullDirection = 1
-                //显示头部
+                //隐藏头部
                 $(".disblock")[0].style.display='none'
               }
 
