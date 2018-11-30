@@ -14,7 +14,7 @@
 
 <style lang="scss" scoped>
   .centerImgbox {
-    height: 10.3rem;margin-bottom: 1rem;
+    height: 10.3rem;border-bottom: 1rem solid #f5f5f5;
     img{
       width: 100%;height: 100%;
     }

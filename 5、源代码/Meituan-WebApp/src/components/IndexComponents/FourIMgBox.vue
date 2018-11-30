@@ -23,7 +23,7 @@
 
 <style lang="scss" scoped>
     .fourImgbox{
-      display: flex;flex-wrap: wrap;flex-direction: column;padding:1rem;background-color: #fff;margin-bottom: 1rem;
+      display: flex;flex-wrap: wrap;flex-direction: column;padding:1rem;background-color: #fff;border-bottom: 1rem solid #f5f5f5;
       .f-imgbox{
         display: flex; margin-bottom: .5rem;
         div{
