@@ -1,5 +1,5 @@
 <template>
-  <div class="find" @scroll="goBack">
+  <div class="find">
     <find-header></find-header>
     <find-nav></find-nav>
     <find-list></find-list>
@@ -18,20 +18,20 @@
   export default {
     name: "FindFather",
     components: {FindList, FindNav, FindHeader},
-    // methods:{
-    //     goBack(){
-    //       let elm = $(".back");
-    //       let startPos = (elm).offset().top;
-    //       // $.event.add(window, "scroll", function() {
-    //       let p = $(window).scrollTop();
-    //       if((p) > startPos){
-    //         (elm).css({right:'1',opacity:'.5'});
-    //       }else{
-    //         (elm).css({right:'-3.5rem',opacity:'.8'});
-    //       }
-    //     }
-    //
-    //   }
+    methods:{
+        // goBack(){
+        //   let elm = $(".back");
+        //   let startPos = (elm).offset().top;
+        //   // $.event.add(window, "scroll", function() {
+        //   let p = $(window).scrollTop();
+        //   if((p) > startPos){
+        //     (elm).css({right:'1',opacity:'.5'});
+        //   }else{
+        //     (elm).css({right:'-3.5rem',opacity:'.8'});
+        //   }
+        // }
+
+      }
 
   }
 </script>

@@ -105,16 +105,16 @@
          mounted() {
            this._getData();
            this._scrollChange()
-         // $(".wrapper").scrollTop(scrollT)
 
           //下拉与上拉
           this.$nextTick(()=>{
             var scroller =new BScroll(this.$refs.wrapper,{
               probeType:3
             })
+            //获取上次滚动位置
             let scrollT = window.localStorage.getItem("scrollT")
             console.log(scrollT)
-           // scroller.scrollTo(0,-1*scrollT)
+            scroller.scrollTo(0,-1*scrollT)
             scroller.hasVerticalScroll=true
 
             scroller.on("scrollStart", ()=> {
@@ -124,6 +124,7 @@
             })
               //touch滑动
             scroller.on("scroll", ()=> {
+
               //存储滚动位置
               window.localStorage.setItem("scrollT", -1*scroller.y)
              // console.log("scrollY:"+scroller.y)
@@ -135,6 +136,8 @@
                 this.pulldownTxt = ""
                 this.pulldown = true;
                 this.pullDirection = 1
+                //显示头部
+                $(".disblock")[0].style.display='none'
               }
 
               if(scroller.y > 10 && scroller.y <=30){
@@ -143,9 +146,14 @@
                 this.pulldownTxt = ""
                 this.pullDirection = 1
               }
-
+             // 上拉
+              if(scroller.y<0){
+                $(".disblock")[0].style.display='flex'
+               // console.log(scroller.y)
+              }
               //上拉
               if(scroller.y-scroller.maxScrollY <0){
+
                 this.pullup = true;
                 this.pullDirection = -1;
                 this.pullupText="释放分页...."
