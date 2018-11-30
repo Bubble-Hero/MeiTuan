@@ -47,6 +47,7 @@
   .swiper-container {
     width: 100%;
     height: 100%;
+    box-shadow: 0rem 1.3rem 1.8rem #ccc;
   }
   .swiper-slide {
     text-align: center;

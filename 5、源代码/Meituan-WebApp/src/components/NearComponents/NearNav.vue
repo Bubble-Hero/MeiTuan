@@ -15,14 +15,11 @@
 </script>
 
 <style lang="scss" scoped>
-  /*.selected{*/
-    /*position: relative;*/
-    /*color:#f94024;*/
-    /*!*border-bottom: 1px solid red;*!*/
-    /*font-size: 1.6rem!important;*/
-    /*top:-.1rem;*/
-    /*font-weight: 800;*/
-  /*}*/
+  .nearnav{
+    background: #fff;
+    z-index: 10000;
+    width: 100%;
+  }
 
   .nearnav ul{
     display: flex;

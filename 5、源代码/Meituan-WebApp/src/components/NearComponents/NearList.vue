@@ -1,32 +1,35 @@
 <template>
-  <div class="nearnav-li">
-    <ul class="nav-ul">
-      <li v-for="(bb,index) in items[0]"><a>{{bb.title}}</a></li>
-    </ul>
-    <ul class="life-ul">
-      <li v-for="(cc,index) in items[1]">
-        <div class="left-picture">
-          <img :src="cc.pic1" alt="">
-        </div>
-        <div class="right-other">
-          <div class="other-top">
-            <p>{{cc.p1}}</p>
-            <span>{{cc.span1}}</span>
+    <div class="nearnav-li">
+      <ul class="nav-ul">
+        <li v-for="(bb,index) in items[0]"><a>{{bb.title}}</a></li>
+      </ul>
+      <ul class="life-ul">
+        <li v-for="(cc,index) in items[1]">
+          <router-link to="/near/nearchild">
+          <div class="left-picture">
+            <img :src="cc.pic1" alt="">
           </div>
-          <div class="other-cen">
-            <img :src="cc.pic2" alt="">
-            <span>{{cc.span2}}</span>
-            <span>{{cc.span3}}</span>
+          <div class="right-other">
+            <div class="other-top">
+              <p>{{cc.p1}}</p>
+              <span>{{cc.span1}}</span>
+            </div>
+            <div class="other-cen">
+              <img :src="cc.pic2" alt="">
+              <span>{{cc.span2}}</span>
+              <span>{{cc.span3}}</span>
+            </div>
+            <div class="sale">{{cc.sale}}</div>
+            <div class="last">
+              <img :src="cc.pic3" alt="">
+              <p>{{cc.p2}}</p>
+            </div>
           </div>
-          <div class="sale">{{cc.sale}}</div>
-          <div class="last">
-            <span><img :src="cc.pic3" alt=""></span>
-            <p>{{cc.p2}}</p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
+          </router-link>
+        </li>
+      </ul>
+    </div>
+
 </template>
 
 <script>
@@ -76,31 +79,37 @@
     border-bottom: 1px solid #eee;
     padding: 1.2rem 0;
   }
-  .nearnav-li .life-ul li .left-picture{
+  .nearnav-li .life-ul li a{
+    display: flex;
+    width: 100%;
+  }
+  .nearnav-li .life-ul li a .left-picture{
     width: 7.8rem;
     height: 5.8rem;
     border: 1px solid #cec3c1;
   }
-  .nearnav-li .life-ul li .left-picture img{
+  .nearnav-li .life-ul li a .left-picture img{
     width: 7.8rem;
     height: 5.8rem;
   }
-  .nearnav-li .life-ul li .right-other{
+  .nearnav-li .life-ul li a .right-other{
     flex: 1;
+    width: 100%;
     padding-left: .9rem;
     /*background: #f00;*/
   }
-  .nearnav-li .life-ul li .right-other .other-top{
+  .nearnav-li .life-ul li a .right-other .other-top{
     position: relative;
     display: flex;
+    width: 100%;
   }
-  .nearnav-li .life-ul li .right-other .other-top p{
+  .nearnav-li .life-ul li a .right-other .other-top p{
     width: 12rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .nearnav-li .life-ul li .right-other .other-top span{
+  .nearnav-li .life-ul li a .right-other .other-top span{
     display: inline-block;
     position: absolute;
     width: 4.1rem;
@@ -111,18 +120,18 @@
     border-bottom-left-radius: .9rem;
     color: #727274;
   }
-  .nearnav-li .life-ul li .right-other .other-cen{
+  .nearnav-li .life-ul li a .right-other .other-cen{
     display: flex;
     align-items: center;
   }
-  .nearnav-li .life-ul li .right-other .other-cen img{
+  .nearnav-li .life-ul li a .right-other .other-cen img{
     width: 5rem;
     height: .9rem;
   }
-  .nearnav-li .life-ul li .right-other .other-cen span{
+  .nearnav-li .life-ul li a .right-other .other-cen span{
     padding-left: .7rem;
   }
-  .nearnav-li .life-ul li .right-other .sale{
+  .nearnav-li .life-ul li a .right-other .sale{
     width: 4.6rem;
     text-align: center;
     line-height: 1.3rem;
@@ -130,20 +139,21 @@
     color: #f75b0e;
     margin-top: .4rem;
   }
-  .nearnav-li .life-ul li .right-other .last{
+  .nearnav-li .life-ul li a .right-other .last{
     display: flex;
     padding-top: .4rem;
   }
-  .nearnav-li .life-ul li .right-other .last span{
+  /*.nearnav-li .life-ul li a .right-other .last span{*/
+    /*width: 1.5rem;*/
+    /*height: 1.5rem;*/
+    /*margin-top: .4rem;*/
+  /*}*/
+  .nearnav-li .life-ul li a .right-other .last img{
     width: 1.5rem;
     height: 1.5rem;
     margin-top: .4rem;
   }
-  .nearnav-li .life-ul li .right-other .last span img{
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .nearnav-li .life-ul li .right-other .last p{
+  .nearnav-li .life-ul li a .right-other .last p{
     padding-left: .3rem;
   }
 </style>

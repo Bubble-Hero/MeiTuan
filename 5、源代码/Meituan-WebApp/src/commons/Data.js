@@ -7,6 +7,11 @@ export const indexNav="http://localhost:3000/indexNav"//获取到了jsonp的数�
  * @type {string}
  */
 export const NEARLISTURL="http://localhost:3000/nearlist"
+/**
+ * 获取near子页面的数据 api
+ * @type {string}
+ */
+export const NEARCHILDURL="http://localhost:3000/nearchild"
 
 /**
  * 获取order页面nav数据 api

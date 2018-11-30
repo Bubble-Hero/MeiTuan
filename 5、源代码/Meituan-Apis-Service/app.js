@@ -11,6 +11,8 @@ var indexSliderRouter = require('./routes/indexSliderImg');
 
 var nearlistRouter = require('./routes/nearlist');
 
+var nearchildRouter = require('./routes/nearchild');
+
 var ordernavRouter = require('./routes/ordernav');
 
 var indexMenuRouter = require('./routes/indexMenu');
@@ -39,6 +41,8 @@ app.use('/users', usersRouter);
 app.use('/indexSlider', indexSliderRouter);
 
 app.use('/nearlist', nearlistRouter);
+
+app.use('/nearchild', nearchildRouter);
 
 app.use('/ordernav', ordernavRouter);
 
