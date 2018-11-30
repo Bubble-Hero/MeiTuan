@@ -172,7 +172,7 @@
                     let srcUrl="../../static/img/refresh-"+1+".png"
                     $(".refreshImg").attr("src",srcUrl)
                   }
-                },40)
+                },45)
 
                 setTimeout(()=>{
                   /*
