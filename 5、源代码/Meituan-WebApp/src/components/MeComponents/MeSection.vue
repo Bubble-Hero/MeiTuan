@@ -138,6 +138,7 @@
   }
   .section-spz li{
     margin: auto 0;
+    flex: 1;
   }
   .section-spz li img{
     width: 2.4rem;

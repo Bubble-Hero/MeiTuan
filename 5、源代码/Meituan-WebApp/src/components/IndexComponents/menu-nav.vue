@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-nav pul m-b">
+  <div class="menu-nav pul">
         <div>
           <ul v-for="(is,ts) in menus" class="row">
             <li v-for="(iss,tss) in is.row"><a href="#">
