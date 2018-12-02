@@ -51,21 +51,21 @@
         <div class="combo">
           <p class="title">食堂套餐</p>
           <ul>
-            <li v-for="(p,index) in i.combo">
+            <li v-for="(p,index) in shopdata"  @click="goshopCar(index)">
               <img :src="p.pic1" alt="">
               <div class="left">
                 <p>{{p.p1}}</p>
                 <p>{{p.p2}}</p>
                 <p>{{p.p3}}</p>
                 <div class="last">
-                  <span>{{p.span1}}</span>
+                  <span>￥{{p.span1}}</span>
                   <span>{{p.span2}}</span>
                   <span>{{p.span3}}</span>
                   <span></span>
                   <span>{{p.span4}}</span>
                 </div>
                 <!----接口--->
-                <div class="buy">{{p.buy}}</div>
+                  <div class="buy">抢购</div>
               </div>
             </li>
           </ul>
@@ -84,14 +84,11 @@
                 <p class="pt">{{c.p1}}<span>{{c.span2}}</span></p>
                 <img :src="c.pic2" alt="" class="one">
                 <p>{{c.p2}}</p>
-                <div class="pict">
-                  <img :src="c.pic3" alt="">
-                  <img :src="c.pic4" alt="">
-                  <img :src="c.pic5" alt="">
-                  <img :src="c.pic6" alt="">
-                </div>
                 <p>{{c.p3}}</p>
-                <p>{{c.p4}}</p>
+                <div class="pict">
+                  <img  v-for="(iss,tss) in c.img" :src="iss" alt="">
+                </div>
+                  <p>{{c.p4}}</p>
                 </div>
               </div>
             </li>
@@ -137,15 +134,42 @@
         name: "NearChild",
         data(){
           return{
-            nearchild:[]
+            nearchild:[],
+            name:"",
+            shopdata:[]
           }
         },
         methods:{
+          goshopCar(index){
+            //alert(index)
+            //存数据库
+                this.$http.post("http://localhost/MeiYuan-webapp-php/addShoppingCart.php", {//这里是将表单的数据提交到该地址
+                  "vipName":this.name,
+                  "goodsId":index,
+                  "goodsCount":1
+                },{
+                  emulateJSON:true
+                }).then((res)=> { //存后台成功
+                  //存shopId
+                  window.localStorage.setItem("shopId",index)
+                  this.$router.push({path:'/shopcar',query:{from:'NearChild'}})
+                })
+          },
           _initPageData() {
+            this.name=window.localStorage.getItem("username")
             Apis.getNearchildData(data=>{
               this.nearchild = data
-              console.log(this.nearchild)
+              //console.log(this.nearchild)
             })
+            //获取可以购买的商品
+              this.$http.post("http://localhost/MeiYuan-webapp-php/getGoodsList.php", {//这里是将表单的数据提交到该地址
+              },{
+                emulateJSON:true
+              }).then((res)=> {
+                //获取商品
+                this.shopdata=res.data
+              //  console.log(this.shopdata)
+              })
           }
         },
         mounted(){
@@ -420,9 +444,8 @@
              display: flex;
               /*justify-content: space-around;*/
               img{
-                width: 6.1rem;
+                width:25%;
                 height: 6.1rem;
-                flex: 1;
                 padding-right: .5rem;
               }
             }

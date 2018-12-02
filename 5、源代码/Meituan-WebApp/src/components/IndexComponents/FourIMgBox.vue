@@ -16,7 +16,7 @@
         name: "FourIMgBox",
       props:["datas"],
       mounted(){
-          console.log(this.datas)
+         // console.log(this.datas)
       }
     }
 </script>

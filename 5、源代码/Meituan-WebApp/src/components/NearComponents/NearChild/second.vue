@@ -38,7 +38,7 @@
       _initPageData() {
         Apis.getNearlistData(data=>{
           this.nearlist = data
-          console.log(this.nearlist)
+          //console.log(this.nearlist)
         })
       }
     },
@@ -47,16 +47,7 @@
       this._initPageData()
     },
     mounted(){
-      $(function(){
-        // alert(1)
-        $('.nearnav-li').eq(0).show();
-        $(".cli").eq(0).addClass('active');
-        $('.cli').click(function(){
-          $(this).addClass('active').siblings('li').removeClass('active');
-          var i = $(this).index();
-          $('.nearnav-li').eq(i).show().siblings('.nearnav-li').hide();
-        })
-      })
+      this.$nextTick(()=>{
         document.addEventListener("touchmove",function(e) {
           e.preventDefault;
           //获取头部高度
@@ -66,7 +57,7 @@
 
           let Hig=$(".nearnav")[0].offsetHeight
           //console.log(hig)
-         // alert(1)
+          // alert(1)
           let offSetTop = $("main").scrollTop();
           if(offSetTop > higtwo){
             $(".nearnav").css({
@@ -88,6 +79,7 @@
             })
           }
         })
+      })
     }
   }
 </script>

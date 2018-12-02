@@ -1,6 +1,6 @@
 <template>
     <div class="sliderBox">
-      <div class="swiper-container">
+      <div class="swiper-container near-header-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="../../../static/img/n-s-1.png" alt=""></div>
           <div class="swiper-slide"><img src="../../../static/img/n-s-2.png" alt=""></div>
@@ -15,7 +15,7 @@
         name: "NearSwiper",
         mounted(){
           this.$nextTick(()=>{
-            var swiper = new Swiper('.swiper-container', {
+            var swiper = new Swiper('.near-header-swiper', {
               loop:true,
               spaceBetween: 30,
               centeredSlides: true,
@@ -43,11 +43,13 @@
   .sliderBox img{
     width: 100%;
     height: 100%;
+    border-radius: 2rem;
   }
   .swiper-container {
     width: 100%;
     height: 100%;
-    box-shadow: 0rem 1.3rem 1.8rem #ccc;
+    box-shadow: 0rem 1.5rem 1.8rem #ccc;
+    border-radius: 2rem;
   }
   .swiper-slide {
     text-align: center;

@@ -18,7 +18,7 @@
       </div>
           <!-- Swiper -->
           <div class="swiper-container">
-            <div class="swiper-wrapper" style="height: 100%;">
+            <div class="swiper-wrapper buf2" style="height: 100%;">
               <div class="swiper-slide">
                 <div class="orderProduct" :key="j" v-for="(i,j) in ordernavDatas">
                 <div class="orderProductList"  :key="n" v-for="(m,n) in i[4].orderSecondDatas">
@@ -108,9 +108,22 @@
         }
       },
       mounted(){
-        var swiper = new Swiper('.swiper-container',{
+        function ss(num) {
+          $(".orderChildNav p").eq(num).addClass("active")
+          $(".orderChildNav p").eq(num).siblings().removeClass("active")
+        }
+        var swiper = new Swiper('.swiper-container', {
+          on: {
+            transitionStart: function () {
+              ss(this.activeIndex)       //导航栏同步滑动 底线与字体颜色的同步改变
+            }
+          }
         });
-
+        //导航和页面滑动事件
+        this._silde()
+        //初始化
+        $(".orderChildNav").children("p:first").addClass("active")
+        $(".headerClickBox").children("p:first").addClass("activebox")
       },
 
       methods: {
@@ -121,7 +134,7 @@
         _initOrderNavData() {
           orderSec.getOrderNavData(data=>{
             this.ordernavDatas = data
-            console.log(this.ordernavDatas)
+           // console.log(this.ordernavDatas)
           })
         },
         // 点击头部出现框框
@@ -140,22 +153,34 @@
           });
           // tab切换
           $(".headerClickBox p").click(function(){
-            $(this).css({
-              color: "#25c8b8",
-              border:".1rem solid #25c8b8",
-              background:"#eafcfa"
+            $(this).addClass("activebox")
+            $(this).siblings().removeClass("activebox")
+          })
+        },
+        _silde(){
+          let high=$(".orderChildNav p")[0].offsetWidth
+          $(".orderChildNav p").click(function(){
+            let index=$(this).index()
+            $(this).addClass("active")
+            $(this).siblings().removeClass("active")
+            // 页面滑动
+            let width= $("header")[0].offsetWidth
+            $(".buf2").css({//"translate3d(-375px,0px,0px)",
+              transform:function(){
+                let transX=index*width*-1;
+                return "translate3d("+transX+"px,0px,0px)"    //拼接字符串
+              },
+              transitionDuration:"300ms"
             })
-            $(this).siblings().css({
-              color: "#a5a5a5",
-              border: ".1rem solid #a5a5a5",
-              background:"white"
-            })
-
           })
         }
       },
       created(){
         //加载数据
+        this._initOrderNavData()
+      },
+      updated(){
+        //加载数据 防止子路由跳转回来后获取不到数据
         this._initOrderNavData()
       }
     }
@@ -164,6 +189,16 @@
 <style scoped>
   /*swiper*/
 
+.active{
+  color:#0cac9a;
+  border-bottom:.2rem solid #0cac9a ;
+
+}
+  .activebox{
+    color: #25c8b8!important;
+    border:.1rem solid #25c8b8!important;
+    background-color:#eafcfa;
+  }
   .orderProPage2Box{
     margin-top: 25rem;
     display: flex;
@@ -241,10 +276,6 @@
     line-height: 4.2rem;
     text-align: center;
 
-  }
-  .orderChildNav p:first-child{
-    color: #0cac9a;
-    border-bottom:.2rem solid #0cac9a;
   }
   .orderProduct{
     width: 100%;
@@ -383,11 +414,6 @@
     border-radius: .5rem;
     margin-right: 2.5%;
     margin-bottom: 1rem;
-  }
-  .headerClickBox p:nth-of-type(1){
-    color: #25c8b8;
-    border: .1rem solid #25c8b8;
-    background: #eafcfa;
   }
   .headerClickBox p:nth-of-type(4){
     margin-right: 0;

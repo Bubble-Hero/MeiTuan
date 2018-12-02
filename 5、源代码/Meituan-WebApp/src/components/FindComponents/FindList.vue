@@ -1,9 +1,21 @@
 <template>
   <div class="findList">
     <div class="swiper-container s2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" v-for="(i,index) in findDatas[0]">
-            <find-cont :m="j" :ind="inde"  v-for="(j,inde) in i.slide"></find-cont>
+      <div class="swiper-wrapper buf1" v-for="(i,index) in findDatas">
+        <div class="swiper-slide" >
+          <find-cont :m="j" :ind="inde"  v-for="(j,inde) in i[0].slide"></find-cont>
+        </div>
+        <div class="swiper-slide">
+          <find-cont :m="j" :ind="inde"  v-for="(j,inde) in i[1].slide"></find-cont>
+        </div>
+        <div class="swiper-slide">
+          <find-cont :m="j" :ind="inde"  v-for="(j,inde) in i[2].slide"></find-cont>
+        </div>
+        <div class="swiper-slide">
+          <find-cont :m="j" :ind="inde"  v-for="(j,inde) in i[3].slide"></find-cont>
+        </div>
+        <div class="swiper-slide">
+          <find-cont :m="j" :ind="inde"  v-for="(j,inde) in i[4].slide"></find-cont>
         </div>
       </div>
     </div>
@@ -24,6 +36,7 @@
         }
       },
       methods: {
+
         /**
          * 加载页面数据
          * @private
@@ -34,7 +47,7 @@
             this.$nextTick(()=>{
               this.initSwiper()
             })
-            console.log(this.findDatas)
+           //console.log(this.findDatas)
           })
         },
         initSwiper(){
@@ -43,7 +56,21 @@
             centeredSlides: true,
             preventLinksPropagation: false,   // 阻止点击事件冒泡(防止手动快速来回滑动后自动滑动紊乱)
             observer:true,                //修改swiper自己或子元素时，自动初始化swiper
-            observeParents:true           //修改swiper的父元素时，自动初始化swiper
+            observeParents:true,        //修改swiper的父元素时，自动初始化swiper
+            on:{
+              transitionStart: function () {
+                ss(this.activeIndex)       //导航栏同步滑动 底线与字体颜色的同步改变
+                function ss(num){
+                  $(".footercolor").animate({
+                    "left": $(".cl").eq(num)[0].offsetLeft,
+                    "width":$(".cl").eq(num)[0].offsetWidth
+                  },150)
+                  //字体颜色
+                  $(".cl").eq(num).addClass("active")
+                  $(".cl").eq(num).siblings().removeClass("active")
+                }
+              }
+            }
           });
         }
 
@@ -52,11 +79,17 @@
         //首页加载数据
         this._initFindData()
         this.initSwiper()
+      },
+      updated(){
+        this.initSwiper()
       }
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  .active{
+    color: #0e0e0e!important;
+  }
 .findList {
     width: 100%;
     position: relative;
@@ -65,25 +98,6 @@
   .swiper-container {
     width: 100%;
     height: 100%;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 1.6rem;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
   }
 
 </style>

@@ -6,12 +6,13 @@
       <div class="radius">
         <router-link to="/me/meLogin" class="loginBox">
           <div>
-            <img src="../../../static/img/m_touxiang.gif">
+            <img src="../../../static/img/m_touxiang.gif" class="defphoto">
+            <img src="../../../static/img/ss.png" class="ueserphoto">
           </div>
         </router-link>
       </div>
-      <router-link to="/me/meLogin">
-        <p>请点击登录</p>
+      <router-link to="/me/meLogin" class="loginBox">
+        <p class="username">请点击登录</p>
       </router-link>
       <!--<img src="../../../static/img/m_banner.gif"/>-->
       <!--<p style="line-height: 2.8rem;font-size: 1.6rem;font-weight: bolder;">请点击登录</p>-->
@@ -26,8 +27,10 @@
           </router-link>
         </li>
         <li>
-          <img src="../../../static/img/m_p.gif">
-          <p>收藏</p>
+          <router-link :to="{path:'/shopcar', query:{from:'MeAll'}}">
+            <img src="../../../static/img/m_p.gif">
+            <p>订单</p>
+          </router-link>
         </li>
         <li>
           <img src="../../../static/img/m_z.gif">
@@ -72,7 +75,7 @@
           __initPageData () {
             meData.getMeData(data => {
               this.prode = data
-              console.log(this.prode)
+             // console.log(this.prode)
             })
           }
         },
@@ -85,6 +88,9 @@
 </script>
 
 <style scoped>
+  .ueserphoto{
+    display: none;
+  }
   section{
     background: #fff;
     flex: 1;

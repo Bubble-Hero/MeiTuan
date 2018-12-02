@@ -1,15 +1,13 @@
 <template>
   <div class="findNav">
     <div class="rows swiper-container s1">
-      <div class="swiper-wrapper s1-content buf1">
-        <span class="footercolor"></span>
-        <div class="swiper-slide first">精选</div>
-        <div class="swiper-slide">关注</div>
-        <div class="swiper-slide">爱美食</div>
-        <div class="swiper-slide">出去浪</div>
-        <div class="swiper-slide">健康生活</div>
-        <div class="swiper-slide">变漂亮</div>
-        <div class="swiper-slide">约电影</div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide cl">精选</div>
+        <div class="swiper-slide cl">关注</div>
+        <div class="swiper-slide cl">爱美食</div>
+        <div class="swiper-slide cl">出去浪</div>
+        <div class="swiper-slide cl">健康生活</div>
+        <span class="footercolor cl"></span>
       </div>
     </div>
   </div>
@@ -21,13 +19,8 @@
     import Swiper from 'swiper'
     export default {
         name: "FindNav",
-      methods:{
-          _navSwiper(){
-            var swiper = new Swiper('.s1');
-          }
-      },
       mounted(){
-        new Swiper('.swiper-container');
+        //new Swiper('.swiper-container');
         // let high=$("header")[0].offsetHeight
         // $(".findNav").css({
         //   "top":"51px"
@@ -38,6 +31,9 @@
 </script>
 
 <style scoped>
+  .active{
+    color: #0e0e0e!important;
+  }
   .rows {
     width: 100%;
     /*overflow-x: scroll;*/
@@ -50,12 +46,10 @@
 
   }
   .swiper-slide{
-    width: auto!important;
-    padding-right: 2.4rem;
+    margin-right: 2.4rem;
     color: #8d8d8d;
-  }
-  .first{
-    color: #0e0e0e;
+    flex: 1;
+    white-space: nowrap;
   }
   .footercolor{
     display: block;

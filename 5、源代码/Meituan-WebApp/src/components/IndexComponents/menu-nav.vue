@@ -39,11 +39,11 @@
               $(".row").each(function (i) { //i此时的下标
                 $(this).find(".fir").each(function (t) {
                   $(this).html(his.menus[i].row[t].ico)
-                  console.log($(this))
+                 // console.log($(this))
                 })
               })
             })
-            console.log(this.menus)
+           // console.log(this.menus)
           })
         },
       },

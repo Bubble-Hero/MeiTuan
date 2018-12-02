@@ -1,6 +1,6 @@
 <template>
   <!--<div>-->
-    <router-link to="/find/findChild">
+    <router-link to="/find/findChild" class="add">
     <div class="findCont">
       <div class="up">
         <span class="name">{{m.name}}</span>
@@ -36,6 +36,9 @@
 </script>
 
 <style scoped>
+  .add{
+    width: 100%;
+  }
   .up{
     display: flex;
     justify-content: space-between;
@@ -68,11 +71,13 @@
 .contImg{
   width: 100%;
   padding-top: 1rem;
+  display: flex;
 }
   .contImg img{
-    width: 31%;
-    margin:0 0.5%;
+    width: 10rem;
+    margin:auto;
     border:0;
+    height: 10rem;
   }
   .message{
     display: flex;

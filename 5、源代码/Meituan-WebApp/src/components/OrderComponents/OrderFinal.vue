@@ -13,6 +13,7 @@
       <order-section></order-section>
       <div class="upload" v-if="pullup" style="text-align: center;font-size: 1rem;color:#aaa">{{pullupText}}</div>
     </div>
+    <h1 class="MyCollectdisnone"><p>我的收藏</p></h1>
     <order-header class="o-header"></order-header>
   </div>
 </template>
@@ -54,9 +55,16 @@
         $(".m-nav").animate({
           "marginTop":this.high
         },500)
+      },
+      checkRouter(){
+        let name=window.localStorage.getItem("username")
+        if(name==""||name==null|name==undefined){
+          this.$router.replace({name:'NoOrder'})
+        }
       }
     },
     mounted(){
+      this.checkRouter()
       this.high=$(".o-header")[0].offsetHeight
       $(".m-nav").css({
         "marginTop":this.high
@@ -67,14 +75,14 @@
         })
         //获取上次滚动位置
         let scrollT = window.localStorage.getItem("scrollT")
-        console.log(scrollT)
+       // console.log(scrollT)
         scroller.scrollTo(0,-1*scrollT)
         scroller.hasVerticalScroll=true
 
         scroller.on("scrollStart", ()=> {
           //判断是下拉,还是上拉
           let translatey=$('.scroller').css('transform').replace(/[^0-9\-,]/g,'').split(',')[1]
-          console.log(translatey)
+         // console.log(translatey)
         })
         //touch滑动
         scroller.on("scroll", ()=> {
@@ -95,17 +103,40 @@
             this.pulldownTxt = ""
             this.pulldown = true;
             this.pullDirection = 1
+            //改变头部样式
+            $(".orderHeader").css({
+              "borderBottom": "0"
+            })
           }
-
           if(scroller.y > 10 && scroller.y <=30){
             //高度大于10再显示
             $(".download").stop().show()
             this.pulldownTxt = ""
             this.pullDirection = 1
           }
+          let hg=$(".o-header")[0].offsetHeight
+          let hg2=$(".m-nav")[0].offsetHeight
+          let hg3=$(".odd")[0].offsetHeight
+          let allhg=hg+hg2+hg3
+        // console.log(allhg)
+         // console.log(scroller.y)
+          if(scroller.y <-1*allhg){
+              $(".MyCollectdisnone").css({
+                "display":"block",
+                "position":"fixed",
+                "top":hg,
+                "left":0
+              })
+          }else{
+            $(".MyCollectdisnone").css({
+              "display":"none"
+            })
+          }
           // 上拉
           if(scroller.y<0){
-
+            $(".orderHeader").css({
+              "borderBottom": ".1rem solid #eee"
+            })
           }
           //上拉
           if(scroller.y-scroller.maxScrollY <0){
@@ -127,7 +158,6 @@
           if(this.pullDirection ==1){
             this.pulldownTxt = ""
             this.refreshtimer=setInterval(()=>{
-              console.log(1)
               if(this.time<8){
                 this.time++
                 let srcUrl="../../static/img/refresh-"+this.time+".png"
@@ -167,44 +197,19 @@
           // console.log("scrollEnd")
         })
       })
-      //
-      $(".order").scroll(function() {
-        let offSetTop = $(".order").scrollTop();
-        if (offSetTop > 0) {
-          $(".orderHeader").css({
-            "border-bottom": ".1rem solid #cccccc"
-          })
-          if(offSetTop > 555){
-            $(".orderMyCollect").css({
-              "position": "fixed",
-              "left":"0",
-              "top":"5rem",
-              "padding":"0 1rem"
-            })
-            $(".orderMyCollect p").css({
-              "border-bottom":".1rem solid #cccccc"
-            })
-          }else{
-            $(".orderMyCollect").css({
-              "position": "static",
-              "padding-left":"0",
-              "border-bottom":"0"
-            })
-          }
-        }else {
-          $(".orderHeader").css({
-            "border-bottom": "0"
-          })
-        }
-
-
-
-      })
     }
   }
 </script>
 
 <style scoped>
+  .MyCollectdisnone{
+    background-color: #fff;
+    padding: 1rem 1rem;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    font-size: 1.4rem;
+    color:#111;
+  }
   .order{
     display: flex;
     flex-direction:column ;

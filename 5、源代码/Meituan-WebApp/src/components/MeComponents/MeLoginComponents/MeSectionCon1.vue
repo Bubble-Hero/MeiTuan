@@ -1,20 +1,34 @@
 <template>
-  <div class="con">
-    <p>未注册的手机号验证后自动创建美团账户</p>
-    <button>获取短信验证码</button>
-    <router-link to="/me/meLogin/meSectionCon2">
-      <p style="color: #666;">密码登录</p>
-    </router-link>
+  <div>
+    <div class="con">
+      <p>未注册的手机号验证后自动创建美团账户</p>
+      <button>获取短信验证码</button>
+      <div class="foo-box">
+        <router-link to="/me/meLogin/meSectionCon2">
+          <p style="color: #666;">密码登录</p>
+        </router-link>
+        <router-link to="/me/meLogin/meSectionCon3">
+          <p style="color: #666;">手动注册</p>
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
     export default {
-        name: "MeSectionCon1"
+        name: "MeSectionCon1",
+      mounted(){
+        //  alert("因本团队无多余经费连接短信接口，所以请您点击手动注册")
+      }
     }
 </script>
 
 <style scoped>
+  .foo-box{
+    display: flex;
+    justify-content: space-between;
+  }
   section .con p{
     color: #bababa;
     height: 3.8rem;

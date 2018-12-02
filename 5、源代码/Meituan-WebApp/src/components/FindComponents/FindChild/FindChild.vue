@@ -75,27 +75,27 @@
     <div class="shareTo">
       <p>分享到</p>
       <div class="shareToi">
-        <a href="">
+        <a href="javascript:void(0)">
           <i class="iconfont shareToi01">&#xe61c;</i>
           <span>微信好友</span>
         </a>
-          <a href="">
+          <a href="javascript:void(0)">
             <i class="iconfont shareToi02">&#xe5e3;</i>
             <span>朋友圈</span>
           </a>
-          <a href="">
+          <a href="javascript:void(0)">
             <i class="iconfont shareToi03">&#xe6d3;</i>
             <span>QQ</span>
           </a>
-          <a href="">
+          <a href="javascript:void(0)">
             <i class="iconfont shareToi04">&#xe658;</i>
             <span>微博</span>
           </a>
-          <a href="">
+          <a href="javascript:void(1)">
             <i class="iconfont shareToi05">&#xe648;</i>
             <span>github</span>
           </a>
-          <a href="">
+          <a href="javascript:void(1)">
             <i class="iconfont shareToi06">&#xe719;</i>
             <span>更多</span>
           </a>
