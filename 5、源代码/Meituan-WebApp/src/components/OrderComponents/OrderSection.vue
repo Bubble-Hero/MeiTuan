@@ -1,6 +1,6 @@
 <template>
   <div class="orderSectionBox">
-    <div class="orderSection">
+    <div class="orderSection odd">
         <h1>最近订单</h1>
         <order-nearby :key="w" :ind="w" :nearby="q" v-for="(q,w) in ordernavDatas"></order-nearby>
         <h2>查看全部<i class="orderSecIcon iconfont">&#xe63b;</i></h2>
@@ -44,7 +44,7 @@
         _initOrderNavData() {
           orderSectionData.getOrderNavData(data=>{
             this.ordernavDatas = data
-            console.log(this.ordernavDatas)
+          //  console.log(this.ordernavDatas)
           })
         }
 

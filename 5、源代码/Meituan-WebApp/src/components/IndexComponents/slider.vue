@@ -1,9 +1,24 @@
 <template>
   <div>
     <div class="swiper-container s1">
-      <div class="swiper-wrapper">
-        <div v-for="(i,s) in sliderImg" class="swiper-slide" >
-          <img :src="i.img">
+      <div class="swiper-wrapper"  v-for="(i,s) in sliderImg">
+        <div class="swiper-slide">
+          <img :src="i[0].img">
+        </div>
+        <div class="swiper-slide" >
+          <img :src="i[1].img">
+        </div>
+        <div class="swiper-slide" >
+          <img :src="i[2].img">
+        </div>
+        <div class="swiper-slide" >
+          <img :src="i[3].img">
+        </div>
+        <div class="swiper-slide" >
+          <img :src="i[4].img">
+        </div>
+        <div class="swiper-slide">
+          <img :src="i[5].img">
         </div>
       </div>
       <!-- Add Pagination -->
@@ -30,7 +45,7 @@
             this.$nextTick(() => { // 下一个UI帧再初始化swiper
               this._initSwiper();
             });
-            console.log(this.sliderImg)
+           // console.log(this.sliderImg)
           })
         },
         //图片自动轮播

@@ -1,8 +1,11 @@
 [
-    {"img":"../../../static/img/i-s-8.png"},
-    {"img":"../../../static/img/i-s-7.png"},
-    {"img":"../../../static/img/i-s-3.jpg"},
-    {"img":"../../../static/img/i-s-4.jpg"},
-    {"img":"../../../static/img/i-s-5.png"},
-    {"img":"../../../static/img/i-s-6.png"}
+    [
+        {"img":"../../../static/img/i-s-8.png"},
+        {"img":"../../../static/img/i-s-7.png"},
+        {"img":"../../../static/img/i-s-3.jpg"},
+        {"img":"../../../static/img/i-s-4.jpg"},
+        {"img":"../../../static/img/i-s-5.png"},
+        {"img":"../../../static/img/i-s-6.png"}
+    ]
+
 ]

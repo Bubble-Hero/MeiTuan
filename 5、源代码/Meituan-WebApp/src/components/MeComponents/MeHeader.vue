@@ -2,7 +2,7 @@
   <!-------------我的头部--------------->
   <header>
     <div class="header-set">
-      <i class="iconfont icon-shezhi"></i>
+      <i class="iconfont icon-shezhi" @click="goSet"></i>
     </div>
     <div class="header-km">
       <i class="iconfont icon-kefu"></i>
@@ -13,7 +13,18 @@
 
 <script>
     export default {
-        name: "MeHeader"
+        name: "MeHeader",
+      methods:{
+          goSet(){
+            let name=window.localStorage.getItem("username")
+            if(!name==""||!name==null|!name==undefined){
+              this.$router.push({name:'exit'});
+            }
+            else{
+              this.$router.push({name:'MeSectionCon1'});
+            }
+          }
+      }
     }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ordernearby">
     <div class="orderNearByBox" :key="r" v-for="(e,r) in nearby[1].orderSection1">
       <div class="orderNearByBoxHeader">
         <div class="orderNearByBoxHeaderL">

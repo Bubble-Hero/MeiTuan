@@ -8,9 +8,11 @@ import betterScroll from 'better-scroll'
 import VueScroller  from 'vue-scroller'
 import 'jquery'
 import Swiper from 'swiper'
+import VueResource from 'vue-resource'
 
 require('./assets/css/base.scss')
 
+Vue.use(VueResource);
 Vue.use(VueScroller)
 //Vue.use(betterScroll)
 

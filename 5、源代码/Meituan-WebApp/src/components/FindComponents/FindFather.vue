@@ -61,8 +61,9 @@
               "display":"block",
               "position":"fixed",
               "left":0,
-              "top":this.high,
-              "zIndex":1000
+              "top":his.high,
+              "zIndex":1000,
+              "width":"100%"
             })
           }
           else {
@@ -85,11 +86,39 @@
         $(".findNav").animate({
           "marginTop":this.high
         },500)
-      }
       },
+      //导航点击
+      _change(){
+        $(".cl").click(function(){
+          let index=$(this).index()
+          $(this).addClass("active")
+          $(this).siblings().removeClass("active")
+          $(".footercolor").animate({
+            "left": $(this)[0].offsetLeft,
+            "width":$(this)[0].offsetWidth
+          },150)
+          // 页面滑动
+          let width= $("header")[0].offsetWidth
+          $(".buf1").css({//"translate3d(-375px,0px,0px)",
+            transform:function(){
+              let transX=index*width*-1;
+              return "translate3d("+transX+"px,0px,0px)"    //拼接字符串
+            },
+            transitionDuration:"300ms"
+          })
+        })
+        //手动滑动页面
+
+      }
+    },
     mounted(){
+
+      //首p换色 footercolor出现
+      $(".cl:first").addClass("active")
+      this._change()
+
      this.high=$("header")[0].offsetHeight
-      console.log(this.high)
+     // console.log(this.high)
       $(".mg-nav").css({
         "marginTop":this.high
       })
@@ -105,14 +134,14 @@
         })
         //获取上次滚动位置
         let scrollT = window.localStorage.getItem("scrollT")
-        console.log(scrollT)
+      //  console.log(scrollT)
         scroller.scrollTo(0,-1*scrollT)
         scroller.hasVerticalScroll=true
 
         scroller.on("scrollStart", ()=> {
           //判断是下拉,还是上拉
           let translatey=$('.scroller').css('transform').replace(/[^0-9\-,]/g,'').split(',')[1]
-          console.log(translatey)
+         // console.log(translatey)
         })
         //touch滑动
         scroller.on("scroll", ()=> {
@@ -175,7 +204,6 @@
           if(this.pullDirection ==1){
             this.pulldownTxt = ""
             this.refreshtimer=setInterval(()=>{
-              console.log(1)
               if(this.time<8){
                 this.time++
                 let srcUrl="../../static/img/refresh-"+this.time+".png"
@@ -230,7 +258,6 @@
     max-height: 92vh;
     background-color: #fff;
   }
-
   .back{
     display: block;
     width: 4rem;

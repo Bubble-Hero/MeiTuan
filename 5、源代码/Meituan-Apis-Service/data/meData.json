@@ -14,40 +14,108 @@
   {"pic":"../../../static/img/m_w.gif","title":"我要合作"},
   {"pic":"../../../static/img/m_g.gif","title":"关于美团"}
   ],
-  "product":[
-    {"pic":"../../../static/img/m_c1.gif",
-      "title":"百盛祥泡馍(清真)",
-      "range":"2.5km","pro":"起送 ￥20   配送  ￥4   美团专送",
-      "good":"../../../static/img/m_c222.gif",
-      "icon":"../../../static/img/m_c22.gif"
-    },
-    {"pic":"../../../static/img/m_c2.gif","title":"大虎老火锅",
-      "range":"3.4km","pro":"重庆火锅",
-      "good":"../../../static/img/m_c111.gif",
-      "icon":"../../../static/img/m_c22.gif",
-       "price":"人均￥28.7"},
-    {"pic":"../../../static/img/m_c4.gif",
-      "title":"老米家泡馍(都市印...)",
-      "range":"3.4km","pro":"重庆火锅",
+  "product1":[
+  {"pic":"../../../static/img/n-d-3.png",
+    "title":"百盛祥泡馍(清真)",
+    "range":"2.5km","pro":"起送 ￥20   配送  ￥4   美团专送",
+    "good":"../../../static/img/m_c222.gif",
+    "icon":["../../../static/img/i-hongbao.png"]
+  },
+  {"pic":"../../../static/img/i-like-13.jpg",
+    "title":"大虎老火锅",
+    "range":"1.2km","pro":"重庆火锅",
+    "good":"../../../static/img/m_c111.gif",
+    "price":"人均￥28.7"},
+  {"pic":"../../../static/img/i-like-2.jpg",
+    "title":"老米家泡馍(都市印...)",
+    "range":"3km","pro":"重庆火锅",
+    "good":"../../../static/img/m_c111.gif",
+    "price":"人均￥28.7"
+  },
+  {"pic":"../../../static/img/f-03.png",
+    "title":"全鑫租车",
+    "range":"9km","pro":"吉祥村   租车",
+    "good":"../../../static/img/m_c333.gif",
+    "icon":["../../../static/img/n-tuan.png"]
+  },
+  {"pic":"../../../static/img/n-f-7.jpg",
+    "title":"陕南锅巴饭",
+    "range":"5.2km","pro":"吉祥村   租车",
+    "good":"../../../static/img/m_c333.gif",
+    "price":"人均￥28.7"},
+  {"pic":"../../../static/img/n-f-13.jpg",
+    "title":"蛐蛐火锅（正兴路店）",
+    "range":"3.9km","pro":"吉祥村   租车",
+    "good":"../../../static/img/m_c333.gif"
+  } ,
+  {"pic":"../../../static/img/n-f-10.jpg",
+      "title":"遇见长安",
+      "range":"3.9km","pro":"长安品牌",
       "good":"../../../static/img/m_c333.gif",
-      "icon":"../../../static/img/m_c22.gif",
+      "price":"人均￥42.7"
+    },
+  {"pic":"../../../static/img/n-f-9.jpg",
+      "title":"清蒸泡馍",
+      "range":"1.9km","pro":"西安 高新区","good":"../../../static/img/m_c333.gif",
+      "icon":["../../../static/img/n-tuan.png"]
+    },
+    {"pic":"../../../static/img/n-f-8.jpg",
+      "title":"百盛祥泡馍(清真)",
+      "range":"2.5km","pro":"正宗泡馍 美团专送",
+      "good":"../../../static/img/m_c222.gif",
+      "icon":["../../../static/img/n-tuan.png"]
+    },
+    {"pic":"../../../static/img/n-f-2.jpg","title":"清真",
+      "range":"3.4km","pro":"清汤类",
+      "good":"../../../static/img/m_c111.gif",
+      "price":"人均￥21.7"}
+],
+  "product2":[
+    {"pic":"../../../static/img/n-f-7.jpg",
+      "title":"故乡沃顿酒店",
+      "range":"2.5km","pro":"互助路立交 经济酒店",
+      "good":"../../../static/img/m_c222.gif"
+    },
+    {"pic":"../../../static/img/f021ab190e97720cf5483f9080b74edc2714881.jpg","title":"陌玩精品影院公寓",
+      "range":"3.4km","pro":"未央路 经济酒店",
+      "good":"../../../static/img/m_c111.gif",
+      "icon":["../../../static/img/i-hongbao.png"],
+      "price":"人均￥28.7"},
+    {"pic":"../../../static/img/i-like-11.jpg",
+      "title":"魏家凉皮",
+      "range":"1.5km","pro":"正宗秘制凉皮",
+      "good":"../../../static/img/m_c333.gif",
       "price":"人均￥28.7"
     },
-    {"pic":"../../../static/img/m_c3.gif","title":"全鑫租车",
-      "range":"3.9km","pro":"吉祥村   租车",
+    {"pic":"../../../static/img/i-like-12.jpg","title":"帅帅甜点",
+      "range":"2km","pro":"甜食",
+      "good":"../../../static/img/m_c333.gif"
+    },
+    {"pic":"../../../static/img/i-like-5.jpg",
+      "title":"乐玩城",
+      "range":"12km","pro":"游戏机 娃娃机",
       "good":"../../../static/img/m_c333.gif",
-      "icon":"../../../static/img/m_c22.gif"
-      },
-    {"pic":"../../../static/img/m_c5.gif",
-      "title":"陕南锅巴饭",
-      "range":"3.9km","pro":"吉祥村   租车",
-      "good":"../../../static/img/m_c333.gif",
-      "icon":"../../../static/img/m_c22.gif",
+      "icon":["../../../static/img/n-tuan.png"],
       "price":"人均￥28.7"},
-    {"pic":"../../../static/img/m_c6.gif",
-      "title":"蛐蛐火锅（正兴路店）",
-      "range":"3.9km","pro":"吉祥村   租车","good":"../../../static/img/m_c333.gif",
-      "icon":"../../../static/img/m_c22.gif"}
+    {
+      "pic": "../../../static/img/o-visits-2.jpg",
+      "title": "肥牛（高新店）",
+      "range": "3.9km",
+      "pro": "火锅",
+      "good": "../../../static/img/m_c333.gif"
+    }
+  ],
+  "product3":[
 
+    {"pic":"../../../static/img/n-f-3.jpg",
+      "title":"自助牛排",
+      "range":"3.1km","pro":"100种食品以上",
+      "good":"../../../static/img/m_c333.gif",
+      "price":"人均￥60.7"
+    },
+    {"pic":"../../../static/img/n-f-6.jpg","title":"花田煮",
+      "range":"3.9km","pro":"美食 汤类",
+      "good":"../../../static/img/m_c333.gif"
+    }
   ]
 }

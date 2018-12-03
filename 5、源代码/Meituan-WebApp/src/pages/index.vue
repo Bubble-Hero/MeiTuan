@@ -63,7 +63,7 @@
         _getData() {
           indexNav.getIndexNav(data => {
             this.datas=data;   //初始化数据
-            console.log(this.datas)
+            //console.log(this.datas)
           })
         },
         _scrollChange() {
@@ -113,14 +113,14 @@
             })
             //获取上次滚动位置
             let scrollT = window.localStorage.getItem("scrollT")
-            console.log(scrollT)
+           // console.log(scrollT)
             scroller.scrollTo(0,-1*scrollT)
             scroller.hasVerticalScroll=true
 
             scroller.on("scrollStart", ()=> {
               //判断是下拉,还是上拉
               let translatey=$('.scroller').css('transform').replace(/[^0-9\-,]/g,'').split(',')[1]
-              console.log(translatey)
+              //console.log(translatey)
             })
               //touch滑动
             scroller.on("scroll", ()=> {
@@ -214,7 +214,7 @@
         },
       updated(){
 
-        console.log("updated")
+       // console.log("updated")
        }
     }
 </script>
