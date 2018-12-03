@@ -89,7 +89,7 @@
                 $(".logintxt").html("登录中...")
               }
             },200)
-            this.$http.post("http://localhost/MeiYuan-webapp-php/loginCheck.php", {//这里是将表单的数据提交到该地址
+            this.$http.post("http://bgs09143010.gotoip1.com/MeiYuan-webapp-php/loginCheck.php", {//这里是将表单的数据提交到该地址
               "username":this.name,//我将表单的两个文本传过去
               "userpass":this.psd
             },{

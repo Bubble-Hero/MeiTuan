@@ -143,7 +143,7 @@
           goshopCar(index){
             //alert(index)
             //存数据库
-                this.$http.post("http://localhost/MeiYuan-webapp-php/addShoppingCart.php", {//这里是将表单的数据提交到该地址
+                this.$http.post("http://bgs09143010.gotoip1.com/MeiYuan-webapp-php/addShoppingCart.php", {//这里是将表单的数据提交到该地址
                   "vipName":this.name,
                   "goodsId":index,
                   "goodsCount":1
@@ -162,7 +162,7 @@
               //console.log(this.nearchild)
             })
             //获取可以购买的商品
-              this.$http.post("http://localhost/MeiYuan-webapp-php/getGoodsList.php", {//这里是将表单的数据提交到该地址
+              this.$http.post("http://bgs09143010.gotoip1.com/MeiYuan-webapp-php/getGoodsList.php", {//这里是将表单的数据提交到该地址
               },{
                 emulateJSON:true
               }).then((res)=> {

@@ -21,7 +21,7 @@
           <p class="eightsix">+86</p>
           <i class="iconfont">&#xe63b;</i>
         </div>
-        <div class="tel"><input id="t1" type="tel" placeholder="请输入手机号"/></div>
+        <div class="tel"><input id="t1" type="text" placeholder="请输入手机号"/></div>
       </div>
       <router-view ></router-view>
       </div>
@@ -82,10 +82,9 @@
     background-color: #fff;
   }
   .login-footer{
-    position: fixed;
-    bottom: 2rem;
+    margin-top: 25rem;
     width: 100%;
-    left: 0;
+
   }
   .type{
     height: 11.5rem;
@@ -121,6 +120,7 @@
   }
   section{
     background: #fff;
+    position: relative;
   }
   .section-content {
     background: #fff;
