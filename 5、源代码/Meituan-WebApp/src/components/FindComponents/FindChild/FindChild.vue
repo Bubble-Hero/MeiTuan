@@ -1,7 +1,7 @@
 <template>
   <div>
   <div :key="index" v-for="(i,index) in findDatas">
-  <div  :key="index"  v-for="(m,index) in i[7].child">
+  <div  :key="index"  v-for="(m,index) in i[5].child">
     <!--....header...-->
     <header>
       <router-link to="/find"><i class="iconfont headeri">&#xe63c;</i></router-link>
