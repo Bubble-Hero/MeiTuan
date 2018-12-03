@@ -69,18 +69,18 @@
         _scrollChange() {
           let his = this
           //子盒子发生滚动事件时
-          $(".wrapper").scroll(function (event) {
-            let scrollT = $(this).scrollTop()
-            //存储滚动位置
-            window.localStorage.setItem("scrollT", scrollT)
-            //如果向上滚动，就让fixed的头部显示，否则消失
-            if($(".wrapper").scrollTop() > 0) {
-              $(".disblock")[0].style.display='flex'
-            }
-            else {
-              $(".disblock")[0].style.display='none'
-            }
-          })
+          // $(".wrapper").scroll(function (event) {
+          //   let scrollT = $(this).scrollTop()
+          //   //存储滚动位置
+          //   window.localStorage.setItem("scrollT", scrollT)
+          //   //如果向上滚动，就让fixed的头部显示，否则消失
+          //   if($(".wrapper").scrollTop() > 0) {
+          //     $(".disblock")[0].style.display='flex'
+          //   }
+          //   else {
+          //     $(".disblock")[0].style.display='none'
+          //   }
+          // })
         },
         _refreshAlert(text) {
           text = text || '操作成功'

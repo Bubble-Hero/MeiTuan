@@ -51,27 +51,27 @@
       _scrollChange() {
         let his = this
         //子盒子发生滚动事件时
-        $(".wrapper").scroll((event)=>{
-          let scrollT = $(this).scrollTop()
-          //存储滚动位置
-          window.localStorage.setItem("scrollT", scrollT)
-          //如果向上滚动，就让fixed的头部显示，否则消失
-          if($(".wrapper").scrollTop() > 0) {
-            $(".disblock").css({
-              "display":"block",
-              "position":"fixed",
-              "left":0,
-              "top":his.high,
-              "zIndex":1000,
-              "width":"100%"
-            })
-          }
-          else {
-            $(".disblock").css({
-              "display":"none"
-            })
-          }
-        })
+        // $(".wrapper").scroll((event)=>{
+        //   let scrollT = $(this).scrollTop()
+        //   //存储滚动位置
+        //   window.localStorage.setItem("scrollT", scrollT)
+        //   //如果向上滚动，就让fixed的头部显示，否则消失
+        //   if($(".wrapper").scrollTop() > 0) {
+        //     $(".disblock").css({
+        //       "display":"block",
+        //       "position":"fixed",
+        //       "left":0,
+        //       "top":his.high,
+        //       "zIndex":1000,
+        //       "width":"100%"
+        //     })
+        //   }
+        //   else {
+        //     $(".disblock").css({
+        //       "display":"none"
+        //     })
+        //   }
+        // })
       },
       _refreshAlert(text) {
         text = text || '操作成功'
@@ -159,13 +159,9 @@
             this.pulldownTxt = ""
             this.pulldown = true;
             this.pullDirection = 1
-            //隐藏头部
-            $(".disblock").css({
-              "display":"none"
-            })
-            $(".findNav").css({
-              "marginTop":0
-            })
+            //
+            $(".disblock").css({display:"none"})
+            $(".findNav").css({marginTop:0})
           }
 
           if(scroller.y > 10 && scroller.y <=30){
@@ -180,9 +176,8 @@
               "display":"flex",
               "position":"fixed",
               "left":0,
-              "top":this.high,
-              "zIndex":1000
             })
+            //$(".findNav").css({marginTop:0})
           }
           //上拉
           if(scroller.y-scroller.maxScrollY <0){
@@ -250,6 +245,9 @@
 </script>
 
 <style scoped>
+.disblock{
+  display: none;position: fixed;top:0;left:0;
+}
 
   #find{
     display: flex;

@@ -82,7 +82,7 @@
 
           getData(){
             if(!this.name==""){
-              this.$http.post("http://localhost/MeiYuan-webapp-php/getShoppingCart.php", {//这里是将表单的数据提交到该地址
+              this.$http.post("http://bgs09143010.gotoip1.com/MeiYuan-webapp-php/getShoppingCart.php", {//这里是将表单的数据提交到该地址
                 "vipName":this.name,
               },{
                 emulateJSON:true
@@ -127,7 +127,7 @@
                 $(".num-input")[i].value=utNum;
                 //计算总价
                 allPrice(obj)
-                his.$http.post("http://localhost/MeiYuan-webapp-php/updateGoodsCount.php", {
+                his.$http.post("http://bgs09143010.gotoip1.com/MeiYuan-webapp-php/updateGoodsCount.php", {
                   "vipName":his.name,
                   "goodsId":obj[i].goodsId,
                   "goodsCount":$(".num-input")[i].value
@@ -146,7 +146,7 @@
                 utNum++;
                 $(".num-input")[i].value=utNum;
                 allPrice(obj)
-                his.$http.post("http://localhost/MeiYuan-webapp-php/updateGoodsCount.php", {
+                his.$http.post("http://bgs09143010.gotoip1.com/MeiYuan-webapp-php/updateGoodsCount.php", {
                   "vipName":his.name,
                   "goodsId":obj[i].goodsId,
                   "goodsCount":$(".num-input")[i].value
@@ -169,7 +169,7 @@
             $(".num-input")[i].onblur=function(){		//数字失去焦点
               let utNum=parseInt($(".num-input")[i].value);
               if(utNum<99){
-                his.$http.post("http://localhost/MeiYuan-webapp-php/updateGoodsCount.php", {
+                his.$http.post("http://bgs09143010.gotoip1.com/MeiYuan-webapp-php/updateGoodsCount.php", {
                   "vipName":his.name,
                   "goodsId":obj[i].goodsId,
                   "goodsCount":$(".num-input")[i].value
@@ -184,7 +184,7 @@
             }
             $(".deleteshop")[i].onclick=function(){		//删除商品
               //后台删除
-              his.$http.post("http://localhost/MeiYuan-webapp-php/deleteGoods.php", {
+              his.$http.post("http://bgs09143010.gotoip1.com/MeiYuan-webapp-php/deleteGoods.php", {
                 "vipName":his.name,
                 "goodsId":obj[i].goodsId,
               },{

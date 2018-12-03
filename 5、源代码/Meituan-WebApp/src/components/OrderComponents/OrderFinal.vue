@@ -76,7 +76,7 @@
         //获取上次滚动位置
         let scrollT = window.localStorage.getItem("scrollT")
        // console.log(scrollT)
-        scroller.scrollTo(0,-1*scrollT)
+       // scroller.scrollTo(0,-1*scrollT)
         scroller.hasVerticalScroll=true
 
         scroller.on("scrollStart", ()=> {
