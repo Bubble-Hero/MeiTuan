@@ -18,9 +18,21 @@
 <script>
     export default {
         name: "MeSectionCon1",
+      methods:{
+          dd(){
+            $(function () {
+              if(window.localStorage.getItem("alert2")==null||window.localStorage.getItem("alert2")==""){
+                alert("因本团队无多余经费连接短信接口，请您点击手动注册")
+                window.localStorage.setItem("alert2",1)
+              }
+            })
+
+          }
+      },
       mounted(){
-        //  alert("因本团队无多余经费连接短信接口，所以请您点击手动注册")
-      }
+          this.dd()
+      },
+
     }
 </script>
 

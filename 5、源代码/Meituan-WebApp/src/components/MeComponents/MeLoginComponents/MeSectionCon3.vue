@@ -53,6 +53,9 @@
           }
         },
         regist() {
+          let time=new Date()
+          let registTime=time.toLocaleString()
+          //console.log(registTime)
           this.getName()
           //判断密码长度
           let psdlength=$("#t3").val().length
@@ -77,7 +80,8 @@
             },300)
             this.$http.post("http://bgs09143010.gotoip1.com/MeiYuan-webapp-php/save.php", {//这里是将表单的数据提交到该地址
               "username":this.name,//我将表单的两个文本传过去
-              "userpass":this.psd
+              "userpass":this.psd,
+              "time":registTime
             },{
               emulateJSON:true
             }).then((res)=> {//这个是获取到了刚传过去文件该文件的整个数据
@@ -87,7 +91,7 @@
               clearInterval(this.timer)
               this.timer=null
               //判断
-              if(res.data==1){
+              if(res.data==1){    //注册成功
                 //用户名先存到本地
                 window.localStorage.setItem("username",this.name)
                 this.$router.push({name:'MeAll',params:{name:this.name}});
@@ -103,6 +107,7 @@
       mounted(){
           this.changeTitle()
           this.getpressdown()
+
       },
       beforeDestroy(){
         $("#t1").attr("placeholder","请输入手机号")
