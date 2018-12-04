@@ -105,7 +105,12 @@
          mounted() {
            this._getData();
            this._scrollChange()
-
+           $(function () {
+             if(window.localStorage.getItem("alert1")==null||window.localStorage.getItem("alert1")==""){
+               alert("欢迎来到BubbleHero美团，您可以随意注册且登录，订单可保存您添加的的商品，以便下次登录查看")
+               window.localStorage.setItem("alert1",1)
+             }
+           })
           //下拉与上拉
           this.$nextTick(()=>{
             var scroller =new BScroll(this.$refs.wrapper,{
